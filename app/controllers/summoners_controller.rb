@@ -1,5 +1,6 @@
 class SummonersController < ApplicationController
   def show
-    @summoner = Question.find(params[:id])
+    @summoner = Summoner.find(params[:id])
+    @teams = @summoner.teams
   end
 end

@@ -1,0 +1,10 @@
+<div class="large-12">
+    <h1>New Summoner</h1>
+
+    <%= form_for @summoner do |s| %>
+      <%= s.label :name %>
+      <%= s.text_field :name %>
+
+      <%= s.submit "Add Summoner" %>
+    <%- end -%>
+  </div>

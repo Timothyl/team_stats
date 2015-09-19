@@ -8,7 +8,7 @@ class Riot
   end
 
   def self.team id
-    get "/v2.4/team/by-summoner/#{id}")
+    get("/v2.4/team/by-summoner/#{id}")
   end
 
 end

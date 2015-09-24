@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+ruby '2.1.5'
 # Use httparty for api calss
 gem 'httparty'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

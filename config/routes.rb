@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "summoners#new"
   resources :summoners
   resources :teams
   # The priority is based upon order of creation: first created -> highest priority.

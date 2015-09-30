@@ -15,3 +15,16 @@
  *= require foundation_and_overrides
 
  */
+
+.new-bar {
+  padding: 0;
+}
+
+.search-button {
+  padding-left: 0;
+}
+
+.home {
+  position: absolute;
+  top: 30%;
+}

@@ -6,7 +6,7 @@ class Team < ActiveRecord::Base
   validates :name, presence: true
 
   def self.make(team, summoner)
-    team = Team.create({"full_Id" => team["fullId"], "name" => team["name"], "tag" => team["tag"]})
+    team = Team.find_or_create_by({"full_Id" => team["fullId"], "name" => team["name"], "tag" => team["tag"]})
     Roster.make_connection(team, summoner)
   end
 end

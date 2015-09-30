@@ -7,7 +7,8 @@ class Team < ActiveRecord::Base
 
   def self.make(team, summoner)
     team = Team.find_or_create_by(full_Id: team["fullId"],
-      name: team["name"], tag: team["tag"])
+                                  name: team["name"],
+                                  tag: team["tag"])
     Roster.make_connection(team, summoner)
   end
 end

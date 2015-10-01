@@ -7,6 +7,10 @@ class Riot
     get("/v1.4/summoner/by-name/#{name}")
   end
 
+  def self.summoner_id id
+    get("/v1.4/summoner/#{id}")
+  end
+
   def self.team id
     get("/v2.4/team/by-summoner/#{id}")
   end

@@ -6,6 +6,6 @@ class Roster < ActiveRecord::Base
   validates :team, presence: true
 
   def self.make_connection (team, summoner)
-    Roster.create(summoner: summoner, team: team)
+    Roster.find_or_create_by(summoner: summoner, team: team)
   end
 end

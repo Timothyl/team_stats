@@ -1,10 +1,15 @@
 class Riot
   include HTTParty
+  debug_output $stdout
   default_params :api_key => '82ced787-5473-4e7f-938f-c35a1f628ade'
   base_uri 'https://na.api.pvp.net/api/lol/na'
 
   def self.summoner_name name
     get("/v1.4/summoner/by-name/#{name}")
+  end
+
+  def self.summoner_id id
+    get("/v1.4/summoner/#{id}")
   end
 
   def self.team id

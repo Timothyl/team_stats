@@ -15,6 +15,7 @@ class SummonersController < ApplicationController
     if Summoner.exists?(riot_id: summoner_info["id"])
       summoner = Summoner.find_by(riot_id: summoner_info["id"])
       redirect_to summoner_path(summoner)
+      # if summoner is in db already doesnt check for new teams
     else
       @summoner = Summoner.new(params)
       if @summoner.save

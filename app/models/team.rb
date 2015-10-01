@@ -11,7 +11,7 @@ class Team < ActiveRecord::Base
                                   name: team["name"],
                                   tag: team["tag"])
     roster.each do |player|
-      summoner = Summoner.add(player['playerId'])
+      summoner = Summoner.add(player["playerId"])
       Roster.make_connection(new_team, summoner)
     end
   end

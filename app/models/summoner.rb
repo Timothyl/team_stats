@@ -14,5 +14,4 @@ class Summoner < ActiveRecord::Base
       return Summoner.new(riot_id: summoner["id"], name: summoner["name"])
     end
   end
-
 end

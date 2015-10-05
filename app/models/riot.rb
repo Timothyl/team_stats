@@ -18,6 +18,6 @@ class Riot
 
   def self.standardize name
     standard = name.downcase
-    standard = standard.gsub(/\s+/, "")
+    standard.gsub(/\s+/, "")
   end
 end

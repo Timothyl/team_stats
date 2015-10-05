@@ -14,7 +14,7 @@ class SummonersController < ApplicationController
       @summoner = Summoner.find_by(name: name)
     else
       summoner_info = Riot.summoner_name(name)[Riot.standardize(name)]
-      params = {riot_id: summoner_info["id"], name: summoner_info["name"]}
+      params = { riot_id: summoner_info["id"], name: summoner_info["name"] }
       @summoner = Summoner.new(params)
       if @summoner.save
         flash[:notice] = "Welcome!"
@@ -23,7 +23,7 @@ class SummonersController < ApplicationController
       end
     end
 
-    if @summoner.id != nil
+    if !@summoner.nil?
       teams_array = Riot.team(@summoner.riot_id)[@summoner.riot_id.to_s]
       File.open("temp.json", "w") do |f|
         f.write(JSON.pretty_generate(teams_array))

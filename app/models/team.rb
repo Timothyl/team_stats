@@ -14,7 +14,7 @@ class Team < ActiveRecord::Base
       end
     end
 
-    File.open("temp.json", "'"w"'") do |f|
+    File.open("temp.json", "w") do |f|
       f.write(JSON.pretty_generate(player_ids_to_query))
     end
 
@@ -24,7 +24,7 @@ class Team < ActiveRecord::Base
         name: t["name"], tag: t["tag"])
       roster = t["roster"]["memberList"]
       roster.each do |player|
-        i = all_players.index { |ap| ap.riot_id == player["'"playerId"'"] }
+        i = all_players.index { |ap| ap.riot_id == player["playerId"] }
         summoner = all_players[i]
         Roster.make_connection(new_team, summoner)
       end

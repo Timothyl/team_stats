@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root "summoners#new"
   resources :summoners, only: [:new, :show, :create]
   resources :teams, only: [:show]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

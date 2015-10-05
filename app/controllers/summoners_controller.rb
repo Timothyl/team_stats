@@ -10,24 +10,29 @@ class SummonersController < ApplicationController
 
   def create
     name = summoner_params[:name]
-    summoner_info = Riot.summoner_name(name)[name]
-    params = {"riot_id" => summoner_info["id"], "name" => summoner_info["name"]}
-    if Summoner.exists?(riot_id: summoner_info["id"])
-      summoner = Summoner.find_by(riot_id: summoner_info["id"])
-      redirect_to summoner_path(summoner)
-      # if summoner is in db already doesnt check for new teams
+    if Summoner.exists?(name: name)
+      @summoner = Summoner.find_by(name: name)
     else
+      summoner_info = Riot.summoner_name(name)[Riot.standardize(name)]
+      params = { riot_id: summoner_info["id"], name: summoner_info["name"] }
       @summoner = Summoner.new(params)
       if @summoner.save
-        flash[:notice] = "summoner added"
-        teams_array = Riot.team(params["riot_id"])[@summoner.riot_id.to_s]
-        teams_array.each do |team|
-          Team.make(team, @summoner)
-        end
-        redirect_to summoner_path(@summoner)
+        flash[:notice] = "Welcome!"
       else
-        render :new
+        flash[:notice] = "Bad summoner name"
       end
+    end
+
+    if !@summoner.nil?
+      teams_array = Riot.team(@summoner.riot_id)[@summoner.riot_id.to_s]
+      File.open("temp.json", "w") do |f|
+        f.write(JSON.pretty_generate(teams_array))
+      end
+
+      Team.make(teams_array, @summoner)
+      redirect_to summoner_path(@summoner)
+    elsif
+      render :new
     end
   end
 

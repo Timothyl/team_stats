@@ -1,7 +1,7 @@
 class Riot
   include HTTParty
   debug_output $stdout
-  default_params :api_key => '82ced787-5473-4e7f-938f-c35a1f628ade'
+  default_params :api_key => ENV['RIOT_API_KEY']
   base_uri 'https://na.api.pvp.net/api/lol/na'
 
   def self.summoner_name name
@@ -16,4 +16,9 @@ class Riot
     get("/v2.4/team/by-summoner/#{id}")
   end
 
+  def self.standardize name
+    standard = name.downcase
+    standard = standard.gsub(/\s+/, "")
+    return standard
+  end
 end

@@ -9,9 +9,7 @@ class SummonersController < ApplicationController
   end
 
   def create
-    ## no need to standardize names, unless for mapping purposes
     name = summoner_params[:name]
-    # stand_name = Riot.standardize(summoner_params[:name])
     if Summoner.exists?(name: name)
       @summoner = Summoner.find_by(name: name)
     else
@@ -27,19 +25,17 @@ class SummonersController < ApplicationController
 
     if @summoner.id != nil
       teams_array = Riot.team(@summoner.riot_id)[@summoner.riot_id.to_s]
-      File.open('temp.json', 'w') do |f|
+      File.open("temp.json", "w") do |f|
         f.write(JSON.pretty_generate(teams_array))
       end
 
       Team.make(teams_array, @summoner)
-      binding.pry
       redirect_to summoner_path(@summoner)
     elsif
       render :new
     end
-
   end
-  
+
   private
   def summoner_params
     params.require(:summoner).permit(:name)

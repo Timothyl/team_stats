@@ -10,11 +10,11 @@ class Team < ActiveRecord::Base
     team_array.each do |t|
       roster = t["roster"]["memberList"]
       roster.each do |r|
-        player_ids_to_query << r['playerId']
+        player_ids_to_query << r["playerId"]
       end
     end
 
-    File.open('temp.json', 'w') do |f|
+    File.open("temp.json", "'"w"'") do |f|
       f.write(JSON.pretty_generate(player_ids_to_query))
     end
 
@@ -24,20 +24,10 @@ class Team < ActiveRecord::Base
         name: t["name"], tag: t["tag"])
       roster = t["roster"]["memberList"]
       roster.each do |player|
-        i = all_players.index { |ap| ap.riot_id == player['playerId'] }
+        i = all_players.index { |ap| ap.riot_id == player["'"playerId"'"] }
         summoner = all_players[i]
         Roster.make_connection(new_team, summoner)
       end
     end
   end
-
-  #   roster = team["roster"]["memberList"]
-  #   new_team = Team.find_or_create_by(full_Id: team["fullId"],
-  #                                 name: team["name"],
-  #                                 tag: team["tag"])
-  #   roster.each do |player|
-  #     summoner = Summoner.add(player["playerId"])
-  #     Roster.make_connection(new_team, summoner)
-  #   end
-  # end
 end

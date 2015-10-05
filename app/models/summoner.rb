@@ -26,16 +26,4 @@ class Summoner < ActiveRecord::Base
     return player_list_to_return
   end
 
-
-  #
-  #   if Summoner.exists?(riot_id: id)
-  #     return Summoner.find_by(riot_id: id)
-  #   else
-  #     summoner = Riot.summoner_id(id)
-  #     summoner = summoner[id.to_s]
-  #     return Summoner.new(riot_id: summoner["id"], name: summoner["name"])
-  #   end
-  # end
-
-
 end

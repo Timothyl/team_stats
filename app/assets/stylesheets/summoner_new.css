@@ -1,0 +1,38 @@
+.new-bar {
+  padding: 0;
+}
+
+.bar {
+  max-width: 600px;
+}
+
+.search-button {
+  padding-left: 0;
+}
+
+.home {
+  position: absolute;
+  top: 35%;
+}
+
+.new_title {
+  color: gold;
+  font-family: ;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg") no-repeat center center fixed;
+  background-color: #cccccc;
+  background-size: cover;
+}

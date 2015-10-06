@@ -5,6 +5,7 @@ class Riot
   base_uri "https://na.api.pvp.net/api/lol/na"
 
   def self.summoner_name name
+    name = standardize(name)
     get("/v1.4/summoner/by-name/#{name}")
   end
 

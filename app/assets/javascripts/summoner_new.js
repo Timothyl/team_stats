@@ -1,5 +1,5 @@
 $(function(){
   $(".search-button").on("click", function(){
-    $('.home').addClass('fadeOutLeft');
+    $(".home").addClass("fadeOutLeft");
   });
 });

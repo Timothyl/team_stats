@@ -15,7 +15,7 @@ class SummonersController < ApplicationController
     else
       summoner_info = Riot.summoner_name(name)[Riot.standardize(name)]
       params = { riot_id: summoner_info["id"], name: summoner_info["name"] }
-      @summoner = Summoner.new(params)
+      @summoner = Summoner.find_or_create_by(params)
       if @summoner.save
         flash[:notice] = "Welcome!"
       else

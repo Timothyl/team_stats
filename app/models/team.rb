@@ -19,6 +19,9 @@ class Team < ActiveRecord::Base
     end
 
     all_players = Summoner.add(player_ids_to_query)
+    File.open("temp.json", "w") do |f|
+      f.write(JSON.pretty_generate(all_players))
+    end
     team_array.each do |t|
       new_team = Team.find_or_create_by(full_Id: t["fullId"],
         name: t["name"], tag: t["tag"])

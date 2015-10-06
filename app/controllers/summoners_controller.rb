@@ -22,7 +22,6 @@ class SummonersController < ApplicationController
         flash[:notice] = "Bad summoner name"
       end
     end
-
     if !@summoner.nil?
       teams_array = Riot.team(@summoner.riot_id)[@summoner.riot_id.to_s]
       File.open("temp.json", "w") do |f|

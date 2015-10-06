@@ -43,11 +43,6 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (6.0.2)
-    cachebar (1.1.1)
-      activesupport
-      httparty (~> 0.8.3)
-      redis
-      redis-namespace
     capybara (2.5.0)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -153,25 +148,6 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
-    redis (3.2.1)
-    redis-actionpack (4.0.1)
-      actionpack (~> 4)
-      redis-rack (~> 1.5.0)
-      redis-store (~> 1.1.0)
-    redis-activesupport (4.1.1)
-      activesupport (~> 4)
-      redis-store (~> 1.1.0)
-    redis-namespace (1.5.2)
-      redis (~> 3.0, >= 3.0.4)
-    redis-rack (1.5.0)
-      rack (~> 1.5)
-      redis-store (~> 1.1.0)
-    redis-rails (4.0.0)
-      redis-actionpack (~> 4)
-      redis-activesupport (~> 4)
-      redis-store (~> 1.1.0)
-    redis-store (1.1.6)
-      redis (>= 2.2)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     rspec-core (3.3.2)
@@ -201,7 +177,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    shoulda-matchers (3.0.0)
+    shoulda-matchers (2.8.0)
       activesupport (>= 4.0.0)
     slop (3.6.0)
     spring (1.4.0)
@@ -235,7 +211,6 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  cachebar
   capybara
   coffee-rails (~> 4.1.0)
   devise
@@ -250,7 +225,6 @@ DEPENDENCIES
   pry-rails
   rails (= 4.2.4)
   rails_12factor
-  redis-rails
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

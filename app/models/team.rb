@@ -22,13 +22,11 @@ class Team < ActiveRecord::Base
     File.open("temp.json", "w") do |f|
       f.write(JSON.pretty_generate(all_players))
     end
-    binding.pry
     team_array.each do |t|
       new_team = Team.find_or_create_by(full_Id: t["fullId"],
         name: t["name"], tag: t["tag"])
       roster = t["roster"]["memberList"]
       roster.each do |player|
-        binding.pry
         i = all_players.index { |ap| ap.riot_id == player["playerId"] }
         summoner = all_players[i]
         Roster.make_connection(new_team, summoner)

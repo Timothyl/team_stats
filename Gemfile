@@ -56,3 +56,5 @@ gem 'devise'
 gem 'foundation-rails'
 gem 'rails_12factor', group: :production
 gem 'dotenv-rails'
+gem 'cachebar'
+gem 'redis-rails'

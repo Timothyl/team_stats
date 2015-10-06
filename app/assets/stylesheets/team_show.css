@@ -1,0 +1,11 @@
+.content {
+  background-color: #f9f9f9;
+}
+
+.team_title {
+  font-size: 3rem;
+  color: gold;
+  font-family: monospace;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

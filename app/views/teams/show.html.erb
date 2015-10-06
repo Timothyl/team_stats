@@ -1,6 +1,25 @@
-<%= @team.name %>
-<ul>
-<% @team.summoners.each do |s| %>
-  <li><%= s.name %></li>
-<% end %>
-</ul>
+<h1 class="team_title"><%= @team.name %></h1>
+<div class="row fullWidth">
+  <div class="small-10 medium-10 large-8 small-centered medium-centered columns content">
+    <ul class="tabs" data-tab>
+      <li class="tab-title active"><a href="#panel1">Roster</a></li>
+      <li class="tab-title"><a href="#panel2">Match History(coming soon)</a></li>
+      <li class="tab-title"><a href="#panel3">Damages(coming soon)</a></li>
+    </ul>
+    <div class="tabs-content">
+      <div class="content active" id="panel1">
+        <ul>
+        <% @team.summoners.each do |s| %>
+          <li><%= s.name %></li>
+        <% end %>
+        </ul>
+      </div>
+      <div class="content" id="panel2">
+        <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+      </div>
+      <div class="content" id="panel3">
+        <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+      </div>
+    </div>
+  </div>
+</div>

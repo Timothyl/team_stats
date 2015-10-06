@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 ruby '2.1.5'
 # Use httparty for api calss
 gem 'httparty'
@@ -56,3 +55,4 @@ gem 'shoulda-matchers', group: [:development, :test], require: false
 gem 'devise'
 gem 'foundation-rails'
 gem 'rails_12factor', group: :production
+gem 'dotenv-rails'

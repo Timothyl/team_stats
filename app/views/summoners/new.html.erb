@@ -1,10 +1,17 @@
-<div class="large-12">
-    <h1>New Summoner</h1>
-
+<body>
+  <div class="row home fullWidth">
+    <div class="small-10 text-center small-centered columns">
+      <h1>Team Stats</h1>
+    </div>
+    <div class="bar small-10 medium-9 large-7 small-centered columns">
     <%= form_for @summoner do |s| %>
-      <%= s.label :name %>
-      <%= s.text_field :name %>
-
-      <%= s.submit "Add Summoner" %>
+      <div class="small-10 columns new-bar">
+        <%= s.text_field :name, placeholder: "Enter summoner name here"%>
+      </div>
+      <div class="small-2 columns search-button">
+        <%= s.submit "Search", class: "button postfix" %>
     <%- end -%>
+      </div>
+    </div>
   </div>
+</body>

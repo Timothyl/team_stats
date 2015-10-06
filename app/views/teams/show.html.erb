@@ -1,0 +1,6 @@
+<%= @team.name %>
+<ul>
+<% @team.summoners.each do |s| %>
+  <li><%= s.name %></li>
+<% end %>
+</ul>

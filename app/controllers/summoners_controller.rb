@@ -13,13 +13,17 @@ class SummonersController < ApplicationController
     if Summoner.exists?(name: name)
       @summoner = Summoner.find_by(name: name)
     else
-      summoner_info = Riot.summoner_name(name)[Riot.standardize(name)]
-      params = { riot_id: summoner_info["id"], name: summoner_info["name"] }
-      @summoner = Summoner.find_or_create_by(params)
-      if @summoner.save
-        flash[:notice] = "Welcome!"
-      else
-        flash[:notice] = "Bad summoner name"
+      summoner_info = Riot.summoner_name(name)
+      if !summoner_info.nil?
+        summoner_info = summoner_info[Riot.standardize(name)]
+        params = { riot_id: summoner_info["id"], name: summoner_info["name"] }
+        @summoner = Summoner.find_or_create_by(params)
+        if @summoner.save
+          flash[:notice] = "Welcome!"
+        else
+          flash[:notice] = "Didn't recognize that summoner"
+          @summoner = nil
+        end
       end
     end
     if !@summoner.nil?
@@ -31,6 +35,8 @@ class SummonersController < ApplicationController
       Team.make(teams_array, @summoner)
       redirect_to summoner_path(@summoner)
     elsif
+      flash[:notice] = "Didn't recognize that summoner"
+      @summoner = Summoner.new
       render :new
     end
   end

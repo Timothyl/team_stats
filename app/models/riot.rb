@@ -9,7 +9,7 @@ class Riot
     if all_letters_or_digits(name)
       get("/v1.4/summoner/by-name/#{name}")
     else
-      nil
+      return nil
     end
   end
 
@@ -27,7 +27,6 @@ class Riot
   end
 
   def self.all_letters_or_digits str
-    str[/[a-zA-Z0-9]+/]  == str
+    str[/[a-zA-Z0-9]+/] == str
   end
-
 end

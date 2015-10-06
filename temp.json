@@ -1,163 +1,19 @@
-{
-  "24158657": {
-    "id": 24158657,
-    "name": "EWStalkie",
-    "profileIconId": 925,
-    "summonerLevel": 30,
-    "revisionDate": 1444010401000
-  },
-  "30158992": {
-    "id": 30158992,
-    "name": "rubymoon26",
-    "profileIconId": 642,
-    "summonerLevel": 30,
-    "revisionDate": 1444070318000
-  },
-  "20095379": {
-    "id": 20095379,
-    "name": "TheDelusion",
-    "profileIconId": 28,
-    "summonerLevel": 30,
-    "revisionDate": 1443767237000
-  },
-  "385409": {
-    "id": 385409,
-    "name": "QuidEstPro",
-    "profileIconId": 915,
-    "summonerLevel": 30,
-    "revisionDate": 1443991825000
-  },
-  "39529997": {
-    "id": 39529997,
-    "name": "quickflashmaster",
-    "profileIconId": 546,
-    "summonerLevel": 30,
-    "revisionDate": 1443915009000
-  },
-  "19744834": {
-    "id": 19744834,
-    "name": "phaNzae",
-    "profileIconId": 508,
-    "summonerLevel": 30,
-    "revisionDate": 1440612722000
-  },
-  "26125925": {
-    "id": 26125925,
-    "name": "Clapyohands",
-    "profileIconId": 870,
-    "summonerLevel": 30,
-    "revisionDate": 1443999561000
-  },
-  "32174129": {
-    "id": 32174129,
-    "name": "Stalix07",
-    "profileIconId": 539,
-    "summonerLevel": 30,
-    "revisionDate": 1443930117000
-  },
-  "45574759": {
-    "id": 45574759,
-    "name": "SohoBakery",
-    "profileIconId": 931,
-    "summonerLevel": 30,
-    "revisionDate": 1443905745000
-  },
-  "35491814": {
-    "id": 35491814,
-    "name": "J Killem",
-    "profileIconId": 907,
-    "summonerLevel": 30,
-    "revisionDate": 1443993485000
-  },
-  "25422320": {
-    "id": 25422320,
-    "name": "SolaRed",
-    "profileIconId": 607,
-    "summonerLevel": 30,
-    "revisionDate": 1441666630000
-  },
-  "25921853": {
-    "id": 25921853,
-    "name": "mrpancakemix",
-    "profileIconId": 23,
-    "summonerLevel": 30,
-    "revisionDate": 1444019325000
-  },
-  "19088825": {
-    "id": 19088825,
-    "name": "ELNuestro",
-    "profileIconId": 580,
-    "summonerLevel": 30,
-    "revisionDate": 1441405116000
-  },
-  "21408044": {
-    "id": 21408044,
-    "name": "RunawayFaster",
-    "profileIconId": 28,
-    "summonerLevel": 30,
-    "revisionDate": 1444013755000
-  },
-  "22383558": {
-    "id": 22383558,
-    "name": "dalt492",
-    "profileIconId": 28,
-    "summonerLevel": 30,
-    "revisionDate": 1436321660000
-  },
-  "20106984": {
-    "id": 20106984,
-    "name": "thememan",
-    "profileIconId": 691,
-    "summonerLevel": 30,
-    "revisionDate": 1443934780000
-  },
-  "38919348": {
-    "id": 38919348,
-    "name": "real talka blaow",
-    "profileIconId": 774,
-    "summonerLevel": 30,
-    "revisionDate": 1444019325000
-  },
-  "22668710": {
-    "id": 22668710,
-    "name": "JasonXD",
-    "profileIconId": 931,
-    "summonerLevel": 30,
-    "revisionDate": 1444071896000
-  },
-  "20409409": {
-    "id": 20409409,
-    "name": "BriansBoss",
-    "profileIconId": 539,
-    "summonerLevel": 30,
-    "revisionDate": 1435399194000
-  },
-  "19755361": {
-    "id": 19755361,
-    "name": "Estranged",
-    "profileIconId": 585,
-    "summonerLevel": 30,
-    "revisionDate": 1443764534000
-  },
-  "41683718": {
-    "id": 41683718,
-    "name": "Finisher789",
-    "profileIconId": 627,
-    "summonerLevel": 30,
-    "revisionDate": 1443245421000
-  },
-  "19827563": {
-    "id": 19827563,
-    "name": "xSetsuko",
-    "profileIconId": 26,
-    "summonerLevel": 30,
-    "revisionDate": 1444004572000
-  },
-  "21623880": {
-    "id": 21623880,
-    "name": "its KsYou",
-    "profileIconId": 605,
-    "summonerLevel": 30,
-    "revisionDate": 1444072000000
-  }
-}
+[
+  "#<Summoner:0x007f92db5965a8>",
+  "#<Summoner:0x007f92db57a268>",
+  "#<Summoner:0x007f92db56de78>",
+  "#<Summoner:0x007f92db545860>",
+  "#<Summoner:0x007f92db509428>",
+  "#<Summoner:0x007f92db500d28>",
+  "#<Summoner:0x007f92db4f88f8>",
+  "#<Summoner:0x007f92db4f04f0>",
+  "#<Summoner:0x007f92de1f8380>",
+  "#<Summoner:0x007f92de188788>",
+  "#<Summoner:0x007f92d66dc7a0>",
+  "#<Summoner:0x007f92d66cc9e0>",
+  "#<Summoner:0x007f92d66c4bf0>",
+  "#<Summoner:0x007f92d66a4da0>",
+  "#<Summoner:0x007f92d669d0a0>",
+  "#<Summoner:0x007f92d66950a8>",
+  "#<Summoner:0x007f92db4e9470>"
+]

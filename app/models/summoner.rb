@@ -23,5 +23,6 @@ class Summoner < ActiveRecord::Base
       player = Summoner.find_or_create_by(riot_id: s["id"], name: s["name"])
       player_list_to_return << player
     end
+    return player_list_to_return
   end
 end

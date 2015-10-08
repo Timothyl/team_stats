@@ -13,16 +13,10 @@ class TeamsController < ApplicationController
       @team.matches.each do |match|
         unless match.info == nil
           summ_list = match.info["participantIdentities"]
-          if summ_list == nil
-            binding.pry
-          end
-          i = summ_list.index{ |part| part["player"]["summonerId"] == summ_id}
+          i = summ_list.index { |part| part["player"]["summonerId"] == summ_id }
           unless i == nil
             summ_part_id = summ_list[i]["participantId"]
             summ_info = match.info["participants"][summ_part_id - 1]
-            if summ_info == nil
-              binding.pry
-            end
             roster.kills = summ_info["stats"]["kills"] + roster.kills
             roster.deaths = summ_info["stats"]["deaths"] + roster.deaths
             roster.assists = summ_info["stats"]["assists"] + roster.assists
@@ -32,5 +26,4 @@ class TeamsController < ApplicationController
       end
     end
   end
-
 end

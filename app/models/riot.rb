@@ -9,10 +9,10 @@ class Riot
     name = standardize(name)
     if all_letters_or_digits(name)
       response = get("/v1.4/summoner/by-name/#{name}")
-      unless response.header.code == "200"
-        return nil
-      else
+      if response.header.code == "200"
         return response
+      else
+        return nil
       end
     else
       return nil
@@ -20,7 +20,7 @@ class Riot
   end
 
   def self.summoner_id id
-    response = get("/v1.4/summoner/#{id}")
+    get("/v1.4/summoner/#{id}")
   end
 
   def self.team id
@@ -28,16 +28,16 @@ class Riot
   end
 
   def self.match id
-    unless (Time.now - $stop_time) < 10
+    if (Time.now - $stop_time) < 10
+      return nil
+    else
       response = get("/v2.2/match/#{id}")
-      unless response.header.code == "200"
+      if response.header.code == "200"
+        return response
+      else
         $stop_time = Time.now
         return nil
-      else
-        return response
       end
-    else
-      return nil
     end
   end
 

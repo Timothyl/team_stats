@@ -1,5 +1,5 @@
 .content {
-  background-color: #f9f9f9;
+  background-color: white;
 }
 
 .team_title {
@@ -8,4 +8,12 @@
   font-family: monospace;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.roster_list {
+  margin-left: 0;
+}
+
+.roster_panel {
+  margin-bottom: .5rem;
 }

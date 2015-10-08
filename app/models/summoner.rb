@@ -14,10 +14,13 @@ class Summoner < ActiveRecord::Base
         id_list << id.to_s << ","
       end
       all_summoners.merge!(Riot.summoner_id(id_list))
+      # is this api call necessary?
     end
+    
     File.open("temp.json", "w") do |f|
       f.write(JSON.pretty_generate(all_summoners))
     end
+
     player_list_to_return = []
     all_summoners.each do |_id, s|
       player = Summoner.find_or_create_by(riot_id: s["id"], name: s["name"])

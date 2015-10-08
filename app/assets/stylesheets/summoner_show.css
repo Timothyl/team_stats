@@ -4,4 +4,6 @@ a {
 
 .show_title {
   color: gold;
+  font-family: monospace;
+  font-size: 4rem;
 }

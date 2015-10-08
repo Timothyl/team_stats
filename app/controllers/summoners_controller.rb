@@ -28,10 +28,6 @@ class SummonersController < ApplicationController
     end
     if !@summoner.nil?
       teams_array = Riot.team(@summoner.riot_id)[@summoner.riot_id.to_s]
-      File.open("temp.json", "w") do |f|
-        f.write(JSON.pretty_generate(teams_array))
-      end
-
       Team.make(teams_array, @summoner)
       redirect_to summoner_path(@summoner)
     elsif

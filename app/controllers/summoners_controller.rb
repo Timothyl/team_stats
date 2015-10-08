@@ -28,8 +28,13 @@ class SummonersController < ApplicationController
     end
     if !@summoner.nil?
       teams_array = Riot.team(@summoner.riot_id)[@summoner.riot_id.to_s]
-      Team.make(teams_array, @summoner)
-      redirect_to summoner_path(@summoner)
+      if teams_array.nil?
+        flash[:notice] = "No teams found for that summoner"
+        render :new
+      else
+        Team.make(teams_array, @summoner)
+        redirect_to summoner_path(@summoner)
+      end
     elsif
       flash[:notice] = "Didn't recognize that summoner"
       @summoner = Summoner.new

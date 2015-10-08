@@ -18,6 +18,7 @@
 .new_title {
   color: gold;
   font-family: monospace;
+  font-size: 5rem;
 }
 
 .fullWidth {
@@ -29,10 +30,4 @@
 
 li {
   list-style-type: none;
-}
-
-body {
-  background: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg") no-repeat center center fixed;
-  background-color: #cccccc;
-  background-size: cover;
 }

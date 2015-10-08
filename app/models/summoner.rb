@@ -14,9 +14,7 @@ class Summoner < ActiveRecord::Base
         id_list << id.to_s << ","
       end
       all_summoners.merge!(Riot.summoner_id(id_list))
-    end
-    File.open("temp.json", "w") do |f|
-      f.write(JSON.pretty_generate(all_summoners))
+      # is this api call necessary?
     end
     player_list_to_return = []
     all_summoners.each do |_id, s|

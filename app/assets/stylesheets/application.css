@@ -15,3 +15,9 @@
  *= require foundation_and_overrides
 
  */
+
+ body {
+   background: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg") no-repeat center center fixed;
+   background-color: #cccccc;
+   background-size: cover;
+ }

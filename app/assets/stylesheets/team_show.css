@@ -1,5 +1,5 @@
 .everything {
-  min-width: 900px;
+  min-width: 1000px;
 }
 
 .content {
@@ -42,4 +42,5 @@
 
 .join_date {
   font-size: 1.5rem;
+  white-space: nowrap;
 }

@@ -1,36 +1,38 @@
-<h1 class="team_title"><%= @team.name %></h1>
-<div class="row fullWidth everything">
-  <div class="small-11 medium-11 large-10 small-centered medium-centered columns content">
-    <ul class="tabs" data-tab>
-      <li class="tab-title active"><a href="#panel1">Roster</a></li>
-      <li class="tab-title"><a href="#panel2">Match History(coming soon)</a></li>
-      <li class="tab-title"><a href="#panel3">Damages(coming soon)</a></li>
-    </ul>
-    <div class="tabs-content">
+<body class="animated fadeInRight"id="main">
+  <h1 class="team_title"><%= @team.name %></h1>
+  <div class="row fullWidth everything">
+    <div class="small-11 medium-11 large-10 small-centered medium-centered columns content">
+      <ul class="tabs" data-tab>
+        <li class="tab-title active"><a href="#panel1">Roster</a></li>
+        <li class="tab-title"><a href="#panel2">Match History(coming soon)</a></li>
+        <li class="tab-title"><a href="#panel3">Damages(coming soon)</a></li>
+      </ul>
+      <div class="tabs-content">
 
-      <div class="content active" id="panel1">
-        <ul class="roster_list">
-        <% @team.summoners.each do |s| %>
-        <div class="row">
-          <li class="panel roster_panel">
-              <% stats = s.rosters.find_by(team: @team) %>
-              <div class="small-3 summ_name columns"><%= s.name %> </div>
-              <div class="small-3 kda columns"><%= ((stats.kills + stats.assists)/stats.deaths.to_f).round(1) %> KDA</div>
-              <div class="small-6 columns join_date">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
-          </li>
+        <div class="content active" id="panel1">
+          <ul class="roster_list">
+          <% @team.summoners.each do |s| %>
+          <div class="row">
+            <li class="panel roster_panel">
+                <% stats = s.rosters.find_by(team: @team) %>
+                <div class="small-4 summ_name columns"><%= s.name %> </div>
+                <div class="small-3 kda columns"><%= ((stats.kills + stats.assists)/stats.deaths.to_f).round(1) %> KDA</div>
+                <div class="small-5 columns join_date">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
+            </li>
+          </div>
+          <% end %>
+          </ul>
         </div>
-        <% end %>
-        </ul>
-      </div>
 
-      <div class="content" id="panel2">
-        <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-      </div>
+        <div class="content" id="panel2">
+          <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+        </div>
 
-      <div class="content" id="panel3">
-        <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
-      </div>
+        <div class="content" id="panel3">
+          <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+        </div>
 
+      </div>
     </div>
   </div>
-</div>
+</body>

@@ -1,6 +1,6 @@
 <h1 class="team_title"><%= @team.name %></h1>
-<div class="row fullWidth">
-  <div class="small-10 medium-10 large-8 small-centered medium-centered columns content">
+<div class="row fullWidth everything">
+  <div class="small-11 medium-11 large-10 small-centered medium-centered columns content">
     <ul class="tabs" data-tab>
       <li class="tab-title active"><a href="#panel1">Roster</a></li>
       <li class="tab-title"><a href="#panel2">Match History(coming soon)</a></li>
@@ -11,10 +11,14 @@
       <div class="content active" id="panel1">
         <ul class="roster_list">
         <% @team.summoners.each do |s| %>
+        <div class="row">
           <li class="panel roster_panel">
-            <% stats = s.rosters.find_by(team: @team) %>
-            <%= s.name %> <%= ((stats.kills + stats.assists)/stats.deaths.to_f).round(1) %>
+              <% stats = s.rosters.find_by(team: @team) %>
+              <div class="small-3 summ_name columns"><%= s.name %> </div>
+              <div class="small-3 kda columns"><%= ((stats.kills + stats.assists)/stats.deaths.to_f).round(1) %></div>
+              <div class="small-6 columns">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
           </li>
+        </div>
         <% end %>
         </ul>
       </div>

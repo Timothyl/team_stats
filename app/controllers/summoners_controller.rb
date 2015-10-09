@@ -21,7 +21,6 @@ class SummonersController < ApplicationController
         if @summoner.save
           flash[:notice] = "Welcome!"
         else
-          flash[:notice] = "Didn't recognize that summoner"
           @summoner = nil
         end
       end

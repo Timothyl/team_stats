@@ -5,7 +5,8 @@ class Roster < ActiveRecord::Base
   validates :summoner, presence: true
   validates :team, presence: true
 
-  def self.make_connection (team, summoner)
-    Roster.find_or_create_by(summoner: summoner, team: team)
+  def self.make_connection(team, summoner, joindate)
+    date = Time.at(joindate / 1000)
+    Roster.find_or_create_by(summoner: summoner, team: team, joindate: date)
   end
 end

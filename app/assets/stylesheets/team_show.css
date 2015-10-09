@@ -1,3 +1,7 @@
+.everything {
+  min-width: 900px;
+}
+
 .content {
   background-color: white;
 }
@@ -8,6 +12,8 @@
   font-family: monospace;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 30px;
+  white-space: nowrap;
 }
 
 .roster_list {
@@ -15,5 +21,21 @@
 }
 
 .roster_panel {
-  margin-bottom: .5rem;
+  height: 4.5rem;
+  margin-bottom: 15px;
+  margin-top: -5px;
+}
+
+.summ_name {
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: 2.15rem;
+  color: gold;
+  text-shadow: 1px 1px black;
+}
+
+.kda {
+  font-family: arial;
+  font-size: 2rem;
+  margin-top: -10px;
 }

@@ -2,6 +2,7 @@ class Match < ActiveRecord::Base
   belongs_to :team
 
   validates :match_id, presence: true
+  validates :team_id, presence: true
 
   def self.make(match_id, team)
     unless Match.exists?(match_id: match_id)

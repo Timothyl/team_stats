@@ -25,7 +25,7 @@ class Team < ActiveRecord::Base
       roster.each do |player|
         i = all_players.index { |ap| ap.riot_id == player["playerId"] }
         summoner = all_players[i]
-        Roster.make_connection(new_team, summoner)
+        Roster.make_connection(new_team, summoner, player["joinDate"])
       end
       t["matchHistory"].each do |m|
         match_id = m["gameId"]

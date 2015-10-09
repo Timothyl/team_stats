@@ -10,6 +10,7 @@ class TeamsController < ApplicationController
       roster.kills = 0
       roster.assists = 0
       roster.deaths = 0
+      roster.save
       @team.matches.each do |match|
         unless match.info == nil
           summ_list = match.info["participantIdentities"]

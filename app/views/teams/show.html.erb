@@ -15,8 +15,8 @@
           <li class="panel roster_panel">
               <% stats = s.rosters.find_by(team: @team) %>
               <div class="small-3 summ_name columns"><%= s.name %> </div>
-              <div class="small-3 kda columns"><%= ((stats.kills + stats.assists)/stats.deaths.to_f).round(1) %></div>
-              <div class="small-6 columns">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
+              <div class="small-3 kda columns"><%= ((stats.kills + stats.assists)/stats.deaths.to_f).round(1) %> KDA</div>
+              <div class="small-6 columns join_date">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
           </li>
         </div>
         <% end %>

@@ -1,11 +1,13 @@
-<h3 class = "text-center medium-4 medium-centered columns show_title"> <%= @summoner.name %> </h3>
+<body id="main">
+  <h3 class = "text-center medium-4 medium-centered columns show_title animated fadeInRight"> <%= @summoner.name %> </h3>
 
-<div class="row home fullWidth animated fadeInRight">
-  <div class="small-10 text-center small-centered columns">
-      <ul class = "small-block-grid-3 small-centered medium-centered columns">
-        <% @teams.each do | t | %>
-          <button class="show_button"><%= link_to t.name, team_path(t) %></button>
-        <% end %>
-      </ul>
+  <div class="row home fullWidth animated fadeInRight">
+    <div class="small-10 text-center small-centered columns">
+        <ul class = "small-block-grid-3 small-centered medium-centered columns">
+          <% @teams.each do | t | %>
+            <button class="show_button"><%= link_to t.name, team_path(t) %></button>
+          <% end %>
+        </ul>
+    </div>
   </div>
-</div>
+</body>

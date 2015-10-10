@@ -19,14 +19,12 @@
         <div data-alert class="alert-box alert">
           <div class="flash flash-<%= key %>">
             <%= value %>
-            <a href="#" class="close">x</a>
           </div>
         </div>
       <% else %>
       <div data-alert class="alert-box success">
         <div class="flash flash-<%= key %>">
           <%= value %>
-          <a href="#" class="close">x</a>
         </div>
       </div>
     <% end %>
@@ -35,6 +33,6 @@
     <%= yield %>
 
     <%= javascript_include_tag 'smoothState' %>
-
+    
   </body>
 </html>

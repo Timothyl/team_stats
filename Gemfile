@@ -57,3 +57,4 @@ gem 'foundation-rails', '~> 5.5.3.1'
 gem 'rails_12factor', group: :production
 gem 'dotenv-rails'
 gem 'vcr', group: :test
+gem 'webmock', group: :test

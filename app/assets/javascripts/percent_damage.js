@@ -6,13 +6,16 @@ $(function(){
       dataType: "json"
     }).done(function(data){
       var summoners = data[0];
-      var percent = data[1];
+      var physical = data[1];
+      var magic = data[2];
+      var trueDam = data[3];
+      debugger;
       $("#damages").highcharts({
         chart: {
           type: "bar"
         },
         title: {
-          text: "Average Percent Damage Dealt"
+          text: "Average Percent Damage Dealt to Champions"
         },
         xAxis: {
           categories: summoners
@@ -22,9 +25,21 @@ $(function(){
             text: "Percent"
           }
         },
+        plotOptions: {
+          series: {
+            stacking: 'normal'
+          }
+        },
+        colors: ["#A80A0A", "#112291", "gray"],
         series: [{
-          name: "Total",
-          data: percent
+          name: "Physical",
+          data: physical
+        },{
+          name: "Magic",
+          data: magic
+        },{
+          name: "True",
+          data: trueDam
         }]
       });
     });

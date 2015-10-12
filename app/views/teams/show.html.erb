@@ -16,7 +16,14 @@
             <li class="panel roster_panel">
                 <% stats = s.rosters.find_by(team: @team) %>
                 <div class="small-4 summ_name columns"><%= s.name %> </div>
-                <div class="small-3 kda columns"><%= ((stats.kills + stats.assists)/stats.deaths.to_f).round(1) %> KDA</div>
+                <div class="small-3 kda columns">
+                  <% kda = ((stats.kills + stats.assists)/stats.deaths.to_f).round(1) %>
+                  <% if kda.nan? %>
+                    N/A
+                  <% else %>
+                    <%= kda %> kda
+                  <% end %>
+                </div>
                 <div class="small-5 columns join_date">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
             </li>
           </div>
@@ -29,12 +36,8 @@
         </div>
 
         <div class="content" id="panel3">
-          <% @team.summoners.each do |s| %>
-            <% stats = s.rosters.find_by(team: @team) %>
-            <li><%= s.name %><%= stats.avg_percent_damage %></li>
-          <% end %>
           <div class="row">
-            <div class="small-11 columns" id="damages" style="width:100%; height:400px;"></div>
+            <div class="small-11 columns" id="damages" style="width:100%; height:600px;"></div>
           </div>
         </div>
 

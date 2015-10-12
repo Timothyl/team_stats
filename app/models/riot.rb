@@ -37,8 +37,8 @@ class Riot
       elsif response.header.code == "429"
         $stop_time = Time.now
         return nil
-      else
-        return nil
+      elsif response.header.code == "404"
+        return ["does not exist"]
       end
     end
   end

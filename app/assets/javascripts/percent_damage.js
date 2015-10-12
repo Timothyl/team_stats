@@ -9,7 +9,6 @@ $(function(){
       var physical = data[1];
       var magic = data[2];
       var trueDam = data[3];
-      debugger;
       $("#damages").highcharts({
         chart: {
           type: "bar"
@@ -27,7 +26,7 @@ $(function(){
         },
         plotOptions: {
           series: {
-            stacking: 'normal'
+            stacking: "normal"
           }
         },
         colors: ["#A80A0A", "#112291", "gray"],

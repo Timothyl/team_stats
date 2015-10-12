@@ -5,7 +5,6 @@ feature "user can find their own teams", %{
   I want to type in my summoner name and find all my ranked teams,
   so that I can analyze each team
 } do
-
   scenario "user types in their summoner name", vcr: true do
     visit "/"
     fill_in "summoner_name", with: "thememan"

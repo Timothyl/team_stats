@@ -47,9 +47,6 @@ class Match < ActiveRecord::Base
             sum_magic_dealt = summ_info["stats"]["magicDamageDealtToChampions"]
             sum_true_dealt = summ_info["stats"]["trueDamageDealtToChampions"]
             team_damage_dealt = 0
-            team_physical_dealt = 0
-            team_magic_dealt = 0
-            team_true_dealt = 0
             match.info["participants"].each do |par|
               if par["teamId"] == summ_team
                 team_damage_dealt += par["stats"]["totalDamageDealtToChampions"]

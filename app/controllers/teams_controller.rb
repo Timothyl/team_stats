@@ -17,8 +17,6 @@ class TeamsController < ApplicationController
           magic << s.rosters.find_by(team: @team).avg_magic_damage.to_f
           trueDam << s.rosters.find_by(team: @team).avg_true_damage.to_f
         end
-
-
         render json: [summoners, physical, magic, trueDam]
       end
     end

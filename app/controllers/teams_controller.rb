@@ -7,8 +7,10 @@ class TeamsController < ApplicationController
         Match.get_info(@team)
       end
       format.json do
-        summoners = @team.summoners.map{ |s| s.name }
-        percents = @team.summoners.map{ |s| s.rosters.find_by(team: @team).avg_percent_damage }
+        summoners = @team.summoners.map { |s| s.name }
+        percents = @team.summoners.map do |s|
+          s.rosters.find_by(team: @team).avg_percent_damage
+        end
         render json: [summoners, percents]
       end
     end

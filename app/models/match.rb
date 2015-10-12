@@ -38,14 +38,14 @@ class Match < ActiveRecord::Base
             roster.kills = summ_info["stats"]["kills"] + roster.kills
             roster.deaths = summ_info["stats"]["deaths"] + roster.deaths
             roster.assists = summ_info["stats"]["assists"] + roster.assists
-            summ_damage_dealt = summ_info["stats"]["totalDamageDealtToChampions"]
+            sum_damage_dealt = summ_info["stats"]["totalDamageDealtToChampions"]
             team_damage_dealt = 0
             match.info["participants"].each do |par|
               if par["teamId"] == summ_team
                 team_damage_dealt += par["stats"]["totalDamageDealtToChampions"]
               end
             end
-            perc_damage = (summ_damage_dealt / team_damage_dealt.to_f).round(2)
+            perc_damage = (sum_damage_dealt / team_damage_dealt.to_f).round(2)
             roster.total_percent_damage_dealt += perc_damage * 100
             roster.total_number_of_games += 1
             roster.save
@@ -58,8 +58,5 @@ class Match < ActiveRecord::Base
         roster.save
       end
     end
-
-
-
   end
 end

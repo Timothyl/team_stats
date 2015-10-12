@@ -13,7 +13,6 @@ describe Roster do
   describe "associations" do
     it { should belong_to(:team) }
     it { should belong_to(:summoner) }
-
   end
 
   describe "validations" do

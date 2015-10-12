@@ -7,23 +7,23 @@ $(function(){
     }).done(function(data){
       var summoners = data[0];
       var percent = data[1];
-      $('#damages').highcharts({
+      $("#damages").highcharts({
         chart: {
-          type: 'bar'
+          type: "bar"
         },
         title: {
-          text: 'Average Percent Damage Dealt'
+          text: "Average Percent Damage Dealt"
         },
         xAxis: {
           categories: summoners
         },
         yAxis: {
           title: {
-            text: 'Percent'
+            text: "Percent"
           }
         },
         series: [{
-          name: 'Total',
+          name: "Total",
           data: percent
         }]
       });

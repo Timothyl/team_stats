@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/thememan?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 09 Oct 2015 17:58:44 GMT
+      Server:
+      - Jetty(9.1.5.v20140505)
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVVdUBAgAVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQJFgBuHBZMDFwOXQcWahgDH05WUl0BPU1ERFoLC19TQSwHDgdDQBRSFggYAh1VCVUGUAJTVAAbTFdPGgYBUFJbVQBTAgJQUAFRXwJAbQ==
+      Content-Length:
+      - '114'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"thememan":{"id":20106984,"name":"thememan","profileIconId":691,"summonerLevel":30,"revisionDate":1444285756000}}'
+    http_version: 
+  recorded_at: Fri, 09 Oct 2015 17:58:44 GMT
+- request:
+    method: get
+    uri: https://na.api.pvp.net/api/lol/na/v2.4/team/by-summoner/20106984?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 09 Oct 2015 17:58:45 GMT
+      Server:
+      - Jetty(9.1.5.v20140505)
+      Vary:
+      - Accept-Encoding
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVVZSBwAGVkYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOA0dYa0kIXlpvTR0RB1cLVwxFZBtEAUsNPR4VVgMJahgDH05LRl0JDgxSQ2tJH0JDXg8JDQdCK1wRRRgcdXYxEEMdUR1SSAYZUFRaAAUGXVVOGgAbRAcCB1JXBAVaU1FeVVkKAgoROA==
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"20106984":[{"fullId":"TEAM-f6ab8c00-452d-11e4-814b-782bcb4d1e24","name":"Can
+        we not","tag":"CWN1","status":"RANKED","teamStatDetails":[{"teamStatType":"RANKED_TEAM_3x3","wins":0,"losses":0,"averageGamesPlayed":0},{"teamStatType":"RANKED_TEAM_5x5","wins":1,"losses":0,"averageGamesPlayed":0}],"roster":{"ownerId":20095379,"memberList":[{"playerId":26125925,"joinDate":1411677244000,"inviteDate":1411677244000,"status":"MEMBER"},{"playerId":45574759,"joinDate":1411677301000,"inviteDate":1411677260000,"status":"MEMBER"},{"playerId":20095379,"joinDate":1411677267000,"inviteDate":1411677263000,"status":"MEMBER"},{"playerId":20106984,"joinDate":1411678562000,"inviteDate":1411678406000,"status":"MEMBER"},{"playerId":19755361,"joinDate":1414873072000,"inviteDate":1414873043000,"status":"MEMBER"},{"playerId":385409,"joinDate":1417585691000,"inviteDate":1417585688000,"status":"MEMBER"},{"playerId":41683718,"joinDate":1419303692000,"inviteDate":1419303666000,"status":"MEMBER"},{"playerId":21408044,"joinDate":1420689350000,"inviteDate":1420689323000,"status":"MEMBER"},{"playerId":30158992,"joinDate":1420689409000,"inviteDate":1420689378000,"status":"MEMBER"}]},"matchHistory":[{"kills":56,"deaths":46,"opposingTeamKills":45,"assists":122,"gameMode":"CLASSIC","opposingTeamName":"TOMATOMA","win":true,"invalid":false,"mapId":11,"gameId":1829389967,"date":1432087555763},{"kills":13,"deaths":40,"opposingTeamKills":40,"assists":22,"gameMode":"CLASSIC","opposingTeamName":"Fist
+        Pump 2 Guns","win":false,"invalid":false,"mapId":11,"gameId":1690168175,"date":1420694704885},{"kills":35,"deaths":16,"opposingTeamKills":16,"assists":70,"gameMode":"CLASSIC","opposingTeamName":"Zimby
+        and the Js","win":true,"invalid":false,"mapId":11,"gameId":1690142193,"date":1420691924835},{"kills":37,"deaths":45,"opposingTeamKills":45,"assists":60,"gameMode":"CLASSIC","opposingTeamName":"Walmart
+        in Dallas","win":false,"invalid":false,"mapId":11,"gameId":1686640694,"date":1420354852886},{"kills":15,"deaths":31,"opposingTeamKills":31,"assists":30,"gameMode":"CLASSIC","opposingTeamName":"Goldie
+        Squad","win":false,"invalid":false,"mapId":11,"gameId":1684575615,"date":1420176291916},{"kills":49,"deaths":39,"opposingTeamKills":39,"assists":83,"gameMode":"CLASSIC","opposingTeamName":"woshiduoduowopashui","win":true,"invalid":false,"mapId":11,"gameId":1684517633,"date":1420173889260},{"kills":38,"deaths":28,"opposingTeamKills":28,"assists":53,"gameMode":"CLASSIC","opposingTeamName":"chiao","win":true,"invalid":false,"mapId":11,"gameId":1674304342,"date":1419323823183},{"kills":52,"deaths":42,"opposingTeamKills":42,"assists":78,"gameMode":"CLASSIC","opposingTeamName":"Zet5","win":true,"invalid":false,"mapId":11,"gameId":1674270116,"date":1419321601199},{"kills":22,"deaths":42,"opposingTeamKills":41,"assists":24,"gameMode":"CLASSIC","opposingTeamName":"NoOneLikesSuter","win":false,"invalid":false,"mapId":11,"gameId":1674129056,"date":1419312099877},{"kills":11,"deaths":19,"opposingTeamKills":19,"assists":13,"gameMode":"CLASSIC","opposingTeamName":"OrsonWantsAndyNotElena","win":false,"invalid":false,"mapId":11,"gameId":1674098527,"date":1419309498849},{"kills":49,"deaths":28,"opposingTeamKills":28,"assists":73,"gameMode":"CLASSIC","opposingTeamName":"Team
+        Pulsefire Energy","win":true,"invalid":false,"mapId":11,"gameId":1674036898,"date":1419307495505},{"kills":40,"deaths":31,"opposingTeamKills":31,"assists":52,"gameMode":"CLASSIC","opposingTeamName":"bama
+        boiz","win":true,"invalid":false,"mapId":11,"gameId":1657256198,"date":1417937155362},{"kills":33,"deaths":17,"opposingTeamKills":17,"assists":61,"gameMode":"CLASSIC","opposingTeamName":"ColakoWhyYouTakeMyKills","win":true,"invalid":false,"mapId":11,"gameId":1657215263,"date":1417934722496},{"kills":25,"deaths":16,"opposingTeamKills":16,"assists":42,"gameMode":"CLASSIC","opposingTeamName":"ShrekEmMatE","win":true,"invalid":false,"mapId":11,"gameId":1657164123,"date":1417932285165},{"kills":17,"deaths":47,"opposingTeamKills":47,"assists":25,"gameMode":"CLASSIC","opposingTeamName":"Korean
+        Killer","win":false,"invalid":false,"mapId":11,"gameId":1653174666,"date":1417590509587},{"kills":34,"deaths":19,"opposingTeamKills":19,"assists":33,"gameMode":"CLASSIC","opposingTeamName":"Gg
+        Baron Throws","win":true,"invalid":false,"mapId":11,"gameId":1653151863,"date":1417588232474},{"kills":25,"deaths":37,"opposingTeamKills":37,"assists":23,"gameMode":"CLASSIC","opposingTeamName":"pm4lessons","win":false,"invalid":false,"mapId":1,"gameId":1633955546,"date":1416126487741},{"kills":22,"deaths":39,"opposingTeamKills":39,"assists":25,"gameMode":"CLASSIC","opposingTeamName":"WeDemB0iz","win":false,"invalid":false,"mapId":1,"gameId":1633905702,"date":1416124017839},{"kills":45,"deaths":23,"opposingTeamKills":23,"assists":63,"gameMode":"CLASSIC","opposingTeamName":"ToolCity","win":true,"invalid":false,"mapId":1,"gameId":1633856143,"date":1416121817056},{"kills":49,"deaths":46,"opposingTeamKills":46,"assists":90,"gameMode":"CLASSIC","opposingTeamName":"Montenegro
+        Brotherhood","win":true,"invalid":false,"mapId":1,"gameId":1616029605,"date":1414914304002}],"createDate":1411702444000,"modifyDate":1432087555000,"lastJoinDate":1420689409000,"secondLastJoinDate":1420689350000,"thirdLastJoinDate":1420170607000,"lastGameDate":1432087555000,"lastJoinedRankedTeamQueueDate":1432083852000},{"fullId":"TEAM-c5446f90-5b2d-11e4-8f97-782bcb4d1e24","name":"noplsdontwin","tag":"NPDW","status":"RANKED","teamStatDetails":[{"teamStatType":"RANKED_TEAM_3x3","wins":0,"losses":0,"averageGamesPlayed":0},{"teamStatType":"RANKED_TEAM_5x5","wins":0,"losses":2,"averageGamesPlayed":0}],"roster":{"ownerId":20106984,"memberList":[{"playerId":20409409,"joinDate":1414187742000,"inviteDate":1414096998000,"status":"MEMBER"},{"playerId":20106984,"joinDate":1414194110000,"inviteDate":1414194098000,"status":"MEMBER"},{"playerId":19755361,"joinDate":1414194105000,"inviteDate":1414194099000,"status":"MEMBER"},{"playerId":35491814,"joinDate":1414798905000,"inviteDate":1414798900000,"status":"MEMBER"},{"playerId":32174129,"joinDate":1430630723000,"inviteDate":1430630705000,"status":"MEMBER"},{"playerId":26125925,"joinDate":1430630759000,"inviteDate":1430630753000,"status":"MEMBER"},{"playerId":385409,"joinDate":1438652840000,"inviteDate":1438652835000,"status":"MEMBER"}]},"matchHistory":[{"kills":13,"deaths":24,"opposingTeamKills":24,"assists":16,"gameMode":"CLASSIC","opposingTeamName":"WeOwnZebras","win":false,"invalid":false,"mapId":11,"gameId":1908176597,"date":1438655586752},{"kills":16,"deaths":32,"opposingTeamKills":32,"assists":27,"gameMode":"CLASSIC","opposingTeamName":"Dark
+        Chimera","win":false,"invalid":false,"mapId":11,"gameId":1812320093,"date":1430633515825},{"kills":37,"deaths":33,"opposingTeamKills":33,"assists":55,"gameMode":"CLASSIC","opposingTeamName":"Bonk
+        my Donk Reborn","win":true,"invalid":false,"mapId":1,"gameId":1614492848,"date":1414829560291},{"kills":40,"deaths":20,"opposingTeamKills":20,"assists":70,"gameMode":"CLASSIC","opposingTeamName":"The
+        Avengers Tower","win":true,"invalid":false,"mapId":1,"gameId":1614482907,"date":1414826542977},{"kills":13,"deaths":40,"opposingTeamKills":40,"assists":14,"gameMode":"CLASSIC","opposingTeamName":"AdDICted","win":false,"invalid":false,"mapId":1,"gameId":1604425313,"date":1414224503799},{"kills":41,"deaths":53,"opposingTeamKills":53,"assists":71,"gameMode":"CLASSIC","opposingTeamName":"ConnersAndJayna","win":false,"invalid":false,"mapId":1,"gameId":1604373875,"date":1414221972708},{"kills":33,"deaths":26,"opposingTeamKills":26,"assists":46,"gameMode":"CLASSIC","opposingTeamName":"The
+        Chump Daddies","win":true,"invalid":false,"mapId":1,"gameId":1601783956,"date":1414133397818},{"kills":31,"deaths":28,"opposingTeamKills":28,"assists":48,"gameMode":"CLASSIC","opposingTeamName":"AuthorizedPersonnelOnly","win":false,"invalid":false,"mapId":1,"gameId":1601752252,"date":1414130637261},{"kills":31,"deaths":14,"opposingTeamKills":14,"assists":56,"gameMode":"CLASSIC","opposingTeamName":"Dr
+        Pastor Martin Ssempa","win":true,"invalid":false,"mapId":1,"gameId":1601654617,"date":1414128443990},{"kills":43,"deaths":29,"opposingTeamKills":29,"assists":77,"gameMode":"CLASSIC","opposingTeamName":"Atlantic
+        Black Dragons","win":true,"invalid":false,"mapId":1,"gameId":1601554544,"date":1414126284273}],"createDate":1414121286000,"modifyDate":1438655586000,"lastJoinDate":1438652840000,"secondLastJoinDate":1430630759000,"thirdLastJoinDate":1430630723000,"lastGameDate":1438655586000,"lastJoinedRankedTeamQueueDate":1438653004000},{"fullId":"TEAM-64cf8d47-d035-49b3-8dbf-4b60aec1f967","name":"Hello
+        Kitties On Crack","tag":"HKoC","status":"RANKED","teamStatDetails":[{"teamStatType":"RANKED_TEAM_5x5","wins":0,"losses":1,"averageGamesPlayed":0},{"teamStatType":"RANKED_TEAM_3x3","wins":0,"losses":0,"averageGamesPlayed":0}],"roster":{"ownerId":385409,"memberList":[{"playerId":385409,"joinDate":1322855659000,"inviteDate":1322855659000,"status":"MEMBER"},{"playerId":19088825,"joinDate":1322855729000,"inviteDate":1322855675000,"status":"MEMBER"},{"playerId":24158657,"joinDate":1344277208000,"inviteDate":1344277188000,"status":"MEMBER"},{"playerId":19744834,"joinDate":1376738421000,"inviteDate":1376738417000,"status":"MEMBER"},{"playerId":21623880,"joinDate":1383497467000,"inviteDate":1383497461000,"status":"MEMBER"},{"playerId":45574759,"joinDate":1419560466000,"inviteDate":1419560458000,"status":"MEMBER"},{"playerId":20106984,"joinDate":1440040431000,"inviteDate":1440040415000,"status":"MEMBER"}]},"matchHistory":[{"kills":19,"deaths":33,"opposingTeamKills":33,"assists":33,"gameMode":"CLASSIC","opposingTeamName":"Osiris
+        Practice","win":false,"invalid":false,"mapId":11,"gameId":1924587170,"date":1440042966699},{"kills":41,"deaths":26,"opposingTeamKills":26,"assists":78,"gameMode":"CLASSIC","opposingTeamName":"Real
+        Cahks","win":true,"invalid":false,"mapId":11,"gameId":1678886427,"date":1419719970607},{"kills":45,"deaths":56,"opposingTeamKills":56,"assists":85,"gameMode":"CLASSIC","opposingTeamName":"6666666666666666666666","win":false,"invalid":false,"mapId":11,"gameId":1678864521,"date":1419717307058},{"kills":31,"deaths":37,"opposingTeamKills":37,"assists":44,"gameMode":"CLASSIC","opposingTeamName":"AmysCrew","win":false,"invalid":false,"mapId":11,"gameId":1676946546,"date":1419563539923},{"kills":45,"deaths":21,"opposingTeamKills":21,"assists":89,"gameMode":"CLASSIC","opposingTeamName":"Spiky
+        Catfish","win":true,"invalid":false,"mapId":1,"gameId":1442785701,"date":1404535555638},{"kills":19,"deaths":22,"opposingTeamKills":22,"assists":48,"gameMode":"CLASSIC","opposingTeamName":"arkgablwiehf","win":false,"invalid":false,"mapId":1,"gameId":1442725358,"date":1404532428048},{"kills":32,"deaths":38,"opposingTeamKills":38,"assists":55,"gameMode":"CLASSIC","opposingTeamName":"Absolving
+        Grievances","win":false,"invalid":false,"mapId":1,"gameId":1434887600,"date":1403928983065},{"kills":18,"deaths":14,"opposingTeamKills":14,"assists":34,"gameMode":"CLASSIC","opposingTeamName":"SeasonReward
+        Hunters","win":true,"invalid":false,"mapId":1,"gameId":1434813107,"date":1403925318463},{"kills":24,"deaths":39,"opposingTeamKills":39,"assists":34,"gameMode":"CLASSIC","opposingTeamName":"Team
+        Blast","win":false,"invalid":false,"mapId":1,"gameId":1326599742,"date":1396127772438},{"kills":37,"deaths":26,"opposingTeamKills":26,"assists":78,"gameMode":"CLASSIC","opposingTeamName":"Team
+        Enigmus","win":true,"invalid":false,"mapId":1,"gameId":1144505677,"date":1383529913496},{"kills":47,"deaths":34,"opposingTeamKills":33,"assists":105,"gameMode":"CLASSIC","opposingTeamName":"Ciemna
+        Strona Pomidora","win":true,"invalid":false,"mapId":1,"gameId":1040439747,"date":1376766874329},{"kills":14,"deaths":21,"opposingTeamKills":21,"assists":30,"gameMode":"CLASSIC","opposingTeamName":"DxAxMxN","win":false,"invalid":false,"mapId":1,"gameId":638762604,"date":1356380335787},{"kills":21,"deaths":12,"opposingTeamKills":12,"assists":44,"gameMode":"CLASSIC","opposingTeamName":"Avro
+        Gaming","win":true,"invalid":false,"mapId":1,"gameId":636029874,"date":1356214052701},{"kills":19,"deaths":7,"opposingTeamKills":7,"assists":31,"gameMode":"CLASSIC","opposingTeamName":"Team
+        RealLife","win":true,"invalid":false,"mapId":1,"gameId":635991662,"date":1356211403912},{"kills":22,"deaths":15,"opposingTeamKills":15,"assists":39,"gameMode":"CLASSIC","opposingTeamName":"puking
+        problem","win":true,"invalid":false,"mapId":1,"gameId":634882979,"date":1356145555608},{"kills":19,"deaths":7,"opposingTeamKills":6,"assists":43,"gameMode":"CLASSIC","opposingTeamName":"NULLPOINTERREFERENCE","win":true,"invalid":false,"mapId":1,"gameId":634843556,"date":1356142611696},{"kills":2,"deaths":12,"opposingTeamKills":12,"assists":4,"gameMode":"CLASSIC","opposingTeamName":"Darius
+        or Feed","win":false,"invalid":false,"mapId":10,"gameId":583677310,"date":1352684085224},{"kills":17,"deaths":29,"opposingTeamKills":29,"assists":18,"gameMode":"CLASSIC","opposingTeamName":"Team
+        Arcane Fail","win":true,"invalid":false,"mapId":4,"gameId":554417662,"date":1350715951396},{"kills":13,"deaths":25,"opposingTeamKills":25,"assists":24,"gameMode":"CLASSIC","opposingTeamName":"ALPHA
+        SQUAD PRIME FORCE1","win":false,"invalid":false,"mapId":1,"gameId":348413125,"date":1332561635842},{"kills":30,"deaths":17,"opposingTeamKills":17,"assists":59,"gameMode":"CLASSIC","opposingTeamName":"HelloKittyAdventure","win":true,"invalid":false,"mapId":1,"gameId":348355482,"date":1332556766098}],"createDate":1322884459000,"modifyDate":1444360919922,"lastJoinDate":1440040431000,"secondLastJoinDate":1419560466000,"thirdLastJoinDate":1419560317000,"lastGameDate":1440042966000,"lastJoinedRankedTeamQueueDate":1440040491000}]}'
+    http_version: 
+  recorded_at: Fri, 09 Oct 2015 17:58:45 GMT
+- request:
+    method: get
+    uri: https://na.api.pvp.net/api/lol/na/v1.4/summoner/26125925,45574759,20095379,20106984,19755361,385409,41683718,21408044,30158992,20409409,20106984,19755361,35491814,32174129,26125925,385409,385409,19088825,24158657,19744834,21623880,45574759,20106984,?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 09 Oct 2015 17:58:45 GMT
+      Server:
+      - Jetty(9.1.5.v20140505)
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVVdUBAgAVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQJFgBuHBZMDFwOXQcWahhLRE8IHQBIUUwHAQZUXAcABlNKTlMcQAkECF0NAgdSXFFSUgNWVFIVPA==
+      Content-Length:
+      - '1829'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"24158657":{"id":24158657,"name":"EWStalkie","profileIconId":925,"summonerLevel":30,"revisionDate":1444367592000},"21408044":{"id":21408044,"name":"RunawayFaster","profileIconId":915,"summonerLevel":30,"revisionDate":1444363109000},"20106984":{"id":20106984,"name":"thememan","profileIconId":691,"summonerLevel":30,"revisionDate":1444285756000},"30158992":{"id":30158992,"name":"rubymoon26","profileIconId":642,"summonerLevel":30,"revisionDate":1444070318000},"20095379":{"id":20095379,"name":"TheDelusion","profileIconId":28,"summonerLevel":30,"revisionDate":1444405337000},"385409":{"id":385409,"name":"QuidEstPro","profileIconId":915,"summonerLevel":30,"revisionDate":1444338869000},"19744834":{"id":19744834,"name":"phaNzae","profileIconId":508,"summonerLevel":30,"revisionDate":1440612722000},"26125925":{"id":26125925,"name":"Clapyohands","profileIconId":916,"summonerLevel":30,"revisionDate":1444099815000},"32174129":{"id":32174129,"name":"Stalix07","profileIconId":539,"summonerLevel":30,"revisionDate":1444412736000},"20409409":{"id":20409409,"name":"BriansBoss","profileIconId":539,"summonerLevel":30,"revisionDate":1435399194000},"45574759":{"id":45574759,"name":"SohoBakery","profileIconId":931,"summonerLevel":30,"revisionDate":1444326013000},"35491814":{"id":35491814,"name":"J
+        Killem","profileIconId":907,"summonerLevel":30,"revisionDate":1444325426000},"19088825":{"id":19088825,"name":"ELNuestro","profileIconId":580,"summonerLevel":30,"revisionDate":1441405116000},"19755361":{"id":19755361,"name":"Estranged","profileIconId":585,"summonerLevel":30,"revisionDate":1444087069000},"21623880":{"id":21623880,"name":"its
+        KsYou","profileIconId":605,"summonerLevel":30,"revisionDate":1444346152000},"41683718":{"id":41683718,"name":"Finisher789","profileIconId":627,"summonerLevel":30,"revisionDate":1443245421000}}'
+    http_version: 
+  recorded_at: Fri, 09 Oct 2015 17:58:45 GMT
+recorded_with: VCR 2.9.3

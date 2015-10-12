@@ -19,7 +19,7 @@ $(function(){ $(document).foundation(); });
 
 $(document).ready(function() {
   setTimeout(function(){
-    $(".flash").fadeOut("slow", function() {
+    $(".alert-box").fadeOut("slow", function() {
       $(this).remove();
     })
   }, 4500);

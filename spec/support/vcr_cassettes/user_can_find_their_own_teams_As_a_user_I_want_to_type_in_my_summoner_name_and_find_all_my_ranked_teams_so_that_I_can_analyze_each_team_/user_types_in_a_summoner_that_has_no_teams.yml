@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/xpecial?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 09 Oct 2015 18:11:35 GMT
+      Server:
+      - Jetty(9.1.5.v20140505)
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVVdUBAgAVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQJFgBuHBZMDFwOXQcWahgDH05WUl0BPU1ERFoLC19TQSwHDgdDQBRSFggYAh1VCVAFWApWXQMbTFdPGgMBAlIBVQcBUAEDBVVbVFdAbQ==
+      Content-Length:
+      - '112'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"xpecial":{"id":44989320,"name":"Xpecial","profileIconId":753,"summonerLevel":30,"revisionDate":1443933291000}}'
+    http_version: 
+  recorded_at: Fri, 09 Oct 2015 18:11:35 GMT
+- request:
+    method: get
+    uri: https://na.api.pvp.net/api/lol/na/v2.4/team/by-summoner/44989320?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 09 Oct 2015 18:11:35 GMT
+      Server:
+      - Jetty(9.1.5.v20140505)
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVVZSBwAGVkYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOA0dYa0kIXlpvTR0RB1cLVwxFZBtEAUsNPR4VVgMJahgDH05LRl0JDgxSQ2tJH0JDXg8JDQdCK1wRRRgcdXYxEEMdUR1SSAYZUVJXCgAGUFdRGxwGSkYABQdSUVcHBlIPWloOVwVVR2Q=
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 09 Oct 2015 18:11:35 GMT
+recorded_with: VCR 2.9.3

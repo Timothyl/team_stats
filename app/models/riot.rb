@@ -34,8 +34,10 @@ class Riot
       response = get("/v2.2/match/#{id}")
       if response.header.code == "200"
         return response
-      else
+      elsif response.header.code == "429"
         $stop_time = Time.now
+        return nil
+      else
         return nil
       end
     end

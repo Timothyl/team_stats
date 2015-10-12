@@ -5,7 +5,6 @@ feature "user can see their own team", %{
   I want to choose a team
   so that I can look the data for each one
 } do
-
   scenario "user chooses one of his teams", vcr: true do
     visit "/"
     visit "/"

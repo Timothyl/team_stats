@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151009201016) do
+ActiveRecord::Schema.define(version: 20151012201634) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,15 +23,21 @@ ActiveRecord::Schema.define(version: 20151009201016) do
   end
 
   create_table "rosters", force: :cascade do |t|
-    t.integer  "summoner_id",                null: false
-    t.integer  "team_id",                    null: false
+    t.integer  "summoner_id",                                           null: false
+    t.integer  "team_id",                                               null: false
     t.integer  "kills"
     t.integer  "deaths"
     t.integer  "assists"
     t.datetime "joindate"
-    t.integer  "total_percent_damage_dealt"
+    t.decimal  "total_percent_damage_dealt",    precision: 4, scale: 1
     t.integer  "total_number_of_games"
-    t.integer  "avg_percent_damage"
+    t.decimal  "avg_percent_damage",            precision: 4, scale: 1
+    t.decimal  "total_percent_magic_damage",    precision: 4, scale: 1
+    t.decimal  "total_percent_physical_damage", precision: 4, scale: 1
+    t.decimal  "total_percent_true_damage",     precision: 4, scale: 1
+    t.decimal  "avg_phys_damage",               precision: 4, scale: 1
+    t.decimal  "avg_magic_damage",              precision: 4, scale: 1
+    t.decimal  "avg_true_damage",               precision: 4, scale: 1
   end
 
   create_table "summoners", force: :cascade do |t|

@@ -8,10 +8,16 @@ class TeamsController < ApplicationController
       end
       format.json do
         summoners = @team.summoners.map { |s| s.name }
-        percents = @team.summoners.map do |s|
-          s.rosters.find_by(team: @team).avg_percent_damage
+        physical = []
+        magic = []
+        trueDam = []
+
+        @team.summoners.each do |s|
+          physical << s.rosters.find_by(team: @team).avg_phys_damage.to_f
+          magic << s.rosters.find_by(team: @team).avg_magic_damage.to_f
+          trueDam << s.rosters.find_by(team: @team).avg_true_damage.to_f
         end
-        render json: [summoners, percents]
+        render json: [summoners, physical, magic, trueDam]
       end
     end
   end

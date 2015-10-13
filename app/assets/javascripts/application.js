@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require highcharts
+//= require percent_damage
 //= require smoothState
 //= require_self
 //= require_tree .

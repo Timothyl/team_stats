@@ -16,7 +16,6 @@
 //= require highcharts
 //= require percent_damage
 //= require smoothState
-//= require newToShow
 //= require_self
 //= require_tree .
 
@@ -30,3 +29,7 @@ $(document).ready(function() {
     })
   }, 4500);
 });
+
+(function ($) {
+    $('#main').smoothState();
+})(jQuery);

@@ -12,7 +12,7 @@ class Match < ActiveRecord::Base
 
   def self.get_info team
     team.matches.each do |m|
-      if m.info == nil || m.info[0] == "does not exist"
+      if m.info == nil
         m.info = Riot.match(m.match_id)
         m.save
       end

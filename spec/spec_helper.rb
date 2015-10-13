@@ -25,6 +25,7 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
   c.allow_http_connections_when_no_cassette = true if real_requests
   c.default_cassette_options = { record: :new_episodes }
+  c.ignore_localhost = true
 end
 
 RSpec.configure do |config|

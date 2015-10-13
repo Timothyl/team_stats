@@ -1,11 +1,11 @@
 require "rails_helper"
 
-feature "user can see their own team", %{
+feature "user sees damages", %{
   As a user,
   I want to choose a team
   so that I can look the data for each one
 } do
-  scenario "user chooses one of his teams", vcr: true do
+  scenario "user chooses damages tab", vcr: true, js: true do
     visit "/"
     visit "/"
     fill_in "summoner_name", with: "thememan"

@@ -53,7 +53,7 @@ gem 'factory_girl', group: [:development, :test]
 gem 'valid_attribute', group: [:development, :test]
 gem 'shoulda-matchers', group: [:development, :test], require: false
 gem 'devise'
-gem 'foundation-rails', '~> 5.5.3.1'
+gem 'foundation-rails', '~> 5.5.3.2'
 gem 'rails_12factor', group: :production
 gem 'dotenv-rails'
 gem 'vcr', group: :test

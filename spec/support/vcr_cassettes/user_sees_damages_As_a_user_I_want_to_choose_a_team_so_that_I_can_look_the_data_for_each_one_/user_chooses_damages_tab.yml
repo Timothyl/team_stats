@@ -21,21 +21,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 13 Oct 2015 19:17:09 GMT
+      - Tue, 13 Oct 2015 20:38:47 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       Vary:
       - Accept-Encoding
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTVVZSBwAGVkYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOA0dYa0kIXlpvTR0RB1cLVwxFZBtEAUsNPR4VVgMJahgDH05LRl0JDgxSQ2tJH0JDXg8JDQdCK1wRRRgcdXYxEEMdUR1SSAYZUVZaDAsDU1dWGxwGSkYHDwRWUVcHBFUKWlkBAFEBR2Q=
-      Transfer-Encoding:
-      - chunked
+      - PxQFWFFSDwQTVVZSBwAGVkYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOA0dYa0kIXlpvTR0RB1cLVwxFZBtEAUsNPR4VVgMJahgDH05LRl0JDgxSQ2tJH0JDXg8JDQdCK1wRRRgcdXYxEEMdUR1SSAYZUVZaDQsEXVBbGxwGSkZQDgZSVVZUU1oPAwkKVwUDR2Q=
+      Content-Length:
+      - '13726'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"20106984":[{"fullId":"TEAM-f6ab8c00-452d-11e4-814b-782bcb4d1e24","name":"Can
-        we not","tag":"CWN1","status":"RANKED","teamStatDetails":[{"teamStatType":"RANKED_TEAM_3x3","wins":0,"losses":0,"averageGamesPlayed":0},{"teamStatType":"RANKED_TEAM_5x5","wins":1,"losses":0,"averageGamesPlayed":0}],"roster":{"ownerId":20095379,"memberList":[{"playerId":26125925,"joinDate":1411677244000,"inviteDate":1411677244000,"status":"MEMBER"},{"playerId":45574759,"joinDate":1411677301000,"inviteDate":1411677260000,"status":"MEMBER"},{"playerId":20095379,"joinDate":1411677267000,"inviteDate":1411677263000,"status":"MEMBER"},{"playerId":20106984,"joinDate":1411678562000,"inviteDate":1411678406000,"status":"MEMBER"},{"playerId":19755361,"joinDate":1414873072000,"inviteDate":1414873043000,"status":"MEMBER"},{"playerId":385409,"joinDate":1417585691000,"inviteDate":1417585688000,"status":"MEMBER"},{"playerId":41683718,"joinDate":1419303692000,"inviteDate":1419303666000,"status":"MEMBER"},{"playerId":21408044,"joinDate":1420689350000,"inviteDate":1420689323000,"status":"MEMBER"},{"playerId":30158992,"joinDate":1420689409000,"inviteDate":1420689378000,"status":"MEMBER"}]},"matchHistory":[{"kills":56,"deaths":46,"opposingTeamKills":45,"assists":122,"gameMode":"CLASSIC","opposingTeamName":"TOMATOMA","win":true,"invalid":false,"mapId":11,"gameId":1829389967,"date":1432087555763},{"kills":13,"deaths":40,"opposingTeamKills":40,"assists":22,"gameMode":"CLASSIC","opposingTeamName":"Fist
+        we not","tag":"CWN1","status":"RANKED","teamStatDetails":[{"teamStatType":"RANKED_TEAM_5x5","wins":1,"losses":0,"averageGamesPlayed":0},{"teamStatType":"RANKED_TEAM_3x3","wins":0,"losses":0,"averageGamesPlayed":0}],"roster":{"ownerId":20095379,"memberList":[{"playerId":26125925,"joinDate":1411677244000,"inviteDate":1411677244000,"status":"MEMBER"},{"playerId":45574759,"joinDate":1411677301000,"inviteDate":1411677260000,"status":"MEMBER"},{"playerId":20095379,"joinDate":1411677267000,"inviteDate":1411677263000,"status":"MEMBER"},{"playerId":20106984,"joinDate":1411678562000,"inviteDate":1411678406000,"status":"MEMBER"},{"playerId":19755361,"joinDate":1414873072000,"inviteDate":1414873043000,"status":"MEMBER"},{"playerId":385409,"joinDate":1417585691000,"inviteDate":1417585688000,"status":"MEMBER"},{"playerId":41683718,"joinDate":1419303692000,"inviteDate":1419303666000,"status":"MEMBER"},{"playerId":21408044,"joinDate":1420689350000,"inviteDate":1420689323000,"status":"MEMBER"},{"playerId":30158992,"joinDate":1420689409000,"inviteDate":1420689378000,"status":"MEMBER"}]},"matchHistory":[{"kills":56,"deaths":46,"opposingTeamKills":45,"assists":122,"gameMode":"CLASSIC","opposingTeamName":"TOMATOMA","win":true,"invalid":false,"mapId":11,"gameId":1829389967,"date":1432087555763},{"kills":13,"deaths":40,"opposingTeamKills":40,"assists":22,"gameMode":"CLASSIC","opposingTeamName":"Fist
         Pump 2 Guns","win":false,"invalid":false,"mapId":11,"gameId":1690168175,"date":1420694704885},{"kills":35,"deaths":16,"opposingTeamKills":16,"assists":70,"gameMode":"CLASSIC","opposingTeamName":"Zimby
         and the Js","win":true,"invalid":false,"mapId":11,"gameId":1690142193,"date":1420691924835},{"kills":37,"deaths":45,"opposingTeamKills":45,"assists":60,"gameMode":"CLASSIC","opposingTeamName":"Walmart
         in Dallas","win":false,"invalid":false,"mapId":11,"gameId":1686640694,"date":1420354852886},{"kills":15,"deaths":31,"opposingTeamKills":31,"assists":30,"gameMode":"CLASSIC","opposingTeamName":"Goldie
@@ -51,7 +51,7 @@ http_interactions:
         Chump Daddies","win":true,"invalid":false,"mapId":1,"gameId":1601783956,"date":1414133397818},{"kills":31,"deaths":28,"opposingTeamKills":28,"assists":48,"gameMode":"CLASSIC","opposingTeamName":"AuthorizedPersonnelOnly","win":false,"invalid":false,"mapId":1,"gameId":1601752252,"date":1414130637261},{"kills":31,"deaths":14,"opposingTeamKills":14,"assists":56,"gameMode":"CLASSIC","opposingTeamName":"Dr
         Pastor Martin Ssempa","win":true,"invalid":false,"mapId":1,"gameId":1601654617,"date":1414128443990},{"kills":43,"deaths":29,"opposingTeamKills":29,"assists":77,"gameMode":"CLASSIC","opposingTeamName":"Atlantic
         Black Dragons","win":true,"invalid":false,"mapId":1,"gameId":1601554544,"date":1414126284273}],"createDate":1414121286000,"modifyDate":1438655586000,"lastJoinDate":1438652840000,"secondLastJoinDate":1430630759000,"thirdLastJoinDate":1430630723000,"lastGameDate":1438655586000,"lastJoinedRankedTeamQueueDate":1438653004000},{"fullId":"TEAM-64cf8d47-d035-49b3-8dbf-4b60aec1f967","name":"Hello
-        Kitties On Crack","tag":"HKoC","status":"RANKED","teamStatDetails":[{"teamStatType":"RANKED_TEAM_5x5","wins":0,"losses":1,"averageGamesPlayed":0},{"teamStatType":"RANKED_TEAM_3x3","wins":0,"losses":0,"averageGamesPlayed":0}],"roster":{"ownerId":385409,"memberList":[{"playerId":385409,"joinDate":1322855659000,"inviteDate":1322855659000,"status":"MEMBER"},{"playerId":19088825,"joinDate":1322855729000,"inviteDate":1322855675000,"status":"MEMBER"},{"playerId":24158657,"joinDate":1344277208000,"inviteDate":1344277188000,"status":"MEMBER"},{"playerId":19744834,"joinDate":1376738421000,"inviteDate":1376738417000,"status":"MEMBER"},{"playerId":21623880,"joinDate":1383497467000,"inviteDate":1383497461000,"status":"MEMBER"},{"playerId":45574759,"joinDate":1419560466000,"inviteDate":1419560458000,"status":"MEMBER"},{"playerId":20106984,"joinDate":1440040431000,"inviteDate":1440040415000,"status":"MEMBER"}]},"matchHistory":[{"kills":19,"deaths":33,"opposingTeamKills":33,"assists":33,"gameMode":"CLASSIC","opposingTeamName":"Osiris
+        Kitties On Crack","tag":"HKoC","status":"RANKED","teamStatDetails":[{"teamStatType":"RANKED_TEAM_3x3","wins":0,"losses":0,"averageGamesPlayed":0},{"teamStatType":"RANKED_TEAM_5x5","wins":0,"losses":1,"averageGamesPlayed":0}],"roster":{"ownerId":385409,"memberList":[{"playerId":385409,"joinDate":1322855659000,"inviteDate":1322855659000,"status":"MEMBER"},{"playerId":19088825,"joinDate":1322855729000,"inviteDate":1322855675000,"status":"MEMBER"},{"playerId":24158657,"joinDate":1344277208000,"inviteDate":1344277188000,"status":"MEMBER"},{"playerId":19744834,"joinDate":1376738421000,"inviteDate":1376738417000,"status":"MEMBER"},{"playerId":21623880,"joinDate":1383497467000,"inviteDate":1383497461000,"status":"MEMBER"},{"playerId":45574759,"joinDate":1419560466000,"inviteDate":1419560458000,"status":"MEMBER"},{"playerId":20106984,"joinDate":1440040431000,"inviteDate":1440040415000,"status":"MEMBER"}]},"matchHistory":[{"kills":19,"deaths":33,"opposingTeamKills":33,"assists":33,"gameMode":"CLASSIC","opposingTeamName":"Osiris
         Practice","win":false,"invalid":false,"mapId":11,"gameId":1924587170,"date":1440042966699},{"kills":41,"deaths":26,"opposingTeamKills":26,"assists":78,"gameMode":"CLASSIC","opposingTeamName":"Real
         Cahks","win":true,"invalid":false,"mapId":11,"gameId":1678886427,"date":1419719970607},{"kills":45,"deaths":56,"opposingTeamKills":56,"assists":85,"gameMode":"CLASSIC","opposingTeamName":"6666666666666666666666","win":false,"invalid":false,"mapId":11,"gameId":1678864521,"date":1419717307058},{"kills":31,"deaths":37,"opposingTeamKills":37,"assists":44,"gameMode":"CLASSIC","opposingTeamName":"AmysCrew","win":false,"invalid":false,"mapId":11,"gameId":1676946546,"date":1419563539923},{"kills":45,"deaths":21,"opposingTeamKills":21,"assists":89,"gameMode":"CLASSIC","opposingTeamName":"Spiky
         Catfish","win":true,"invalid":false,"mapId":1,"gameId":1442785701,"date":1404535555638},{"kills":19,"deaths":22,"opposingTeamKills":22,"assists":48,"gameMode":"CLASSIC","opposingTeamName":"arkgablwiehf","win":false,"invalid":false,"mapId":1,"gameId":1442725358,"date":1404532428048},{"kills":32,"deaths":38,"opposingTeamKills":38,"assists":55,"gameMode":"CLASSIC","opposingTeamName":"Absolving
@@ -67,7 +67,7 @@ http_interactions:
         Arcane Fail","win":true,"invalid":false,"mapId":4,"gameId":554417662,"date":1350715951396},{"kills":13,"deaths":25,"opposingTeamKills":25,"assists":24,"gameMode":"CLASSIC","opposingTeamName":"ALPHA
         SQUAD PRIME FORCE1","win":false,"invalid":false,"mapId":1,"gameId":348413125,"date":1332561635842},{"kills":30,"deaths":17,"opposingTeamKills":17,"assists":59,"gameMode":"CLASSIC","opposingTeamName":"HelloKittyAdventure","win":true,"invalid":false,"mapId":1,"gameId":348355482,"date":1332556766098}],"createDate":1322884459000,"modifyDate":1444360919000,"lastJoinDate":1440040431000,"secondLastJoinDate":1419560466000,"thirdLastJoinDate":1419560317000,"lastGameDate":1440042966000,"lastJoinedRankedTeamQueueDate":1440040491000}]}'
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 19:17:09 GMT
+  recorded_at: Tue, 13 Oct 2015 20:38:47 GMT
 - request:
     method: get
     uri: https://na.api.pvp.net/api/lol/na/v1.4/summoner/26125925,45574759,20095379,20106984,19755361,385409,41683718,21408044,30158992,20409409,20106984,19755361,35491814,32174129,26125925,385409,385409,19088825,24158657,19744834,21623880,45574759,20106984,?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
@@ -89,24 +89,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 13 Oct 2015 19:17:10 GMT
+      - Tue, 13 Oct 2015 20:38:48 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       Vary:
       - Accept-Encoding, User-Agent
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTVVdUBAgAVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQJFgBuHBZMDFwOXQcWahhLRE8IHQBIUUwHAQZVUgkOBFpKTlMcQAwHCw8GCwddAVYFVQIGVAEVPA==
-      Transfer-Encoding:
-      - chunked
+      - PxQFWFFSDwQTVVdUBAgAVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQJFgBuHBZMDFwOXQcWahhLRE8IHQBIUUwHAQVfVQgCAFtKTlMcQAhXWQgDBVBTDwQEWVVTBQ4VPA==
+      Content-Length:
+      - '1829'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"24158657":{"id":24158657,"name":"EWStalkie","profileIconId":925,"summonerLevel":30,"revisionDate":1444720848000},"21408044":{"id":21408044,"name":"RunawayFaster","profileIconId":915,"summonerLevel":30,"revisionDate":1444707632000},"20106984":{"id":20106984,"name":"thememan","profileIconId":691,"summonerLevel":30,"revisionDate":1444708194000},"30158992":{"id":30158992,"name":"rubymoon26","profileIconId":642,"summonerLevel":30,"revisionDate":1444761916000},"20095379":{"id":20095379,"name":"TheDelusion","profileIconId":28,"summonerLevel":30,"revisionDate":1444695170000},"385409":{"id":385409,"name":"QuidEstPro","profileIconId":915,"summonerLevel":30,"revisionDate":1444515156000},"19744834":{"id":19744834,"name":"phaNzae","profileIconId":508,"summonerLevel":30,"revisionDate":1440612722000},"26125925":{"id":26125925,"name":"Clapyohands","profileIconId":916,"summonerLevel":30,"revisionDate":1444603145000},"32174129":{"id":32174129,"name":"Stalix07","profileIconId":539,"summonerLevel":30,"revisionDate":1444680776000},"20409409":{"id":20409409,"name":"BriansBoss","profileIconId":539,"summonerLevel":30,"revisionDate":1435399194000},"45574759":{"id":45574759,"name":"SohoBakery","profileIconId":931,"summonerLevel":30,"revisionDate":1444627056000},"35491814":{"id":35491814,"name":"J
+      string: '{"24158657":{"id":24158657,"name":"EWStalkie","profileIconId":925,"summonerLevel":30,"revisionDate":1444767803000},"21408044":{"id":21408044,"name":"RunawayFaster","profileIconId":915,"summonerLevel":30,"revisionDate":1444707632000},"20106984":{"id":20106984,"name":"thememan","profileIconId":691,"summonerLevel":30,"revisionDate":1444708194000},"30158992":{"id":30158992,"name":"rubymoon26","profileIconId":642,"summonerLevel":30,"revisionDate":1444761916000},"20095379":{"id":20095379,"name":"TheDelusion","profileIconId":28,"summonerLevel":30,"revisionDate":1444695170000},"385409":{"id":385409,"name":"QuidEstPro","profileIconId":915,"summonerLevel":30,"revisionDate":1444515156000},"19744834":{"id":19744834,"name":"phaNzae","profileIconId":508,"summonerLevel":30,"revisionDate":1440612722000},"26125925":{"id":26125925,"name":"Clapyohands","profileIconId":916,"summonerLevel":30,"revisionDate":1444603145000},"32174129":{"id":32174129,"name":"Stalix07","profileIconId":539,"summonerLevel":30,"revisionDate":1444768161000},"20409409":{"id":20409409,"name":"BriansBoss","profileIconId":539,"summonerLevel":30,"revisionDate":1435399194000},"45574759":{"id":45574759,"name":"SohoBakery","profileIconId":931,"summonerLevel":30,"revisionDate":1444627056000},"35491814":{"id":35491814,"name":"J
         Killem","profileIconId":907,"summonerLevel":30,"revisionDate":1444613833000},"19088825":{"id":19088825,"name":"ELNuestro","profileIconId":580,"summonerLevel":30,"revisionDate":1441405116000},"19755361":{"id":19755361,"name":"Estranged","profileIconId":585,"summonerLevel":30,"revisionDate":1444087069000},"21623880":{"id":21623880,"name":"its
         KsYou","profileIconId":605,"summonerLevel":30,"revisionDate":1444536429000},"41683718":{"id":41683718,"name":"Finisher789","profileIconId":627,"summonerLevel":30,"revisionDate":1443245421000}}'
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 19:17:10 GMT
+  recorded_at: Tue, 13 Oct 2015 20:38:48 GMT
 - request:
     method: get
     uri: https://na.api.pvp.net/api/lol/na/v2.2/match/1442785701?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
@@ -128,15 +128,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 13 Oct 2015 19:17:10 GMT
+      - Tue, 13 Oct 2015 20:38:49 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       Vary:
       - Accept-Encoding, User-Agent
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVwIDB1JQUFEcTwlOGltWClVcWlEFBQVaAFJSAARBZQ==
-      Content-Length:
-      - '23812'
+      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVwAEAlJeVU4dUxRADF5VAgVWXVNQUFBTAVdWA0Q+
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
@@ -145,7 +145,7 @@ http_interactions:
         Muguruma","matchHistoryUri":"/v1/stats/player_history/NA1/50657423","profileIcon":588}},{"participantId":10,"player":{"summonerId":35050548,"summonerName":"Big
         Yoshi","matchHistoryUri":"/v1/stats/player_history/NA1/49415726","profileIcon":7}}],"teams":[{"teamId":100,"winner":true,"firstBlood":true,"firstTower":true,"firstInhibitor":true,"firstBaron":false,"firstDragon":false,"towerKills":9,"inhibitorKills":2,"baronKills":0,"dragonKills":2,"vilemawKills":0,"dominionVictoryScore":0,"bans":[{"championId":38,"pickTurn":1},{"championId":24,"pickTurn":3},{"championId":25,"pickTurn":5}]},{"teamId":200,"winner":false,"firstBlood":false,"firstTower":false,"firstInhibitor":false,"firstBaron":true,"firstDragon":true,"towerKills":3,"inhibitorKills":0,"baronKills":1,"dragonKills":2,"vilemawKills":0,"dominionVictoryScore":0,"bans":[{"championId":201,"pickTurn":2},{"championId":10,"pickTurn":4},{"championId":64,"pickTurn":6}]}]}'
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 19:17:11 GMT
+  recorded_at: Tue, 13 Oct 2015 20:38:49 GMT
 - request:
     method: get
     uri: https://na.api.pvp.net/api/lol/na/v2.2/match/634843556?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
@@ -169,13 +169,13 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Tue, 13 Oct 2015 19:17:11 GMT
+      - Tue, 13 Oct 2015 20:38:49 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVgYCBldUWlccTwlOGltSVwdTWFcAAwEGUQAOUQVBZQ==
-      Transfer-Encoding:
-      - chunked
+      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVwkAA1BQU1ccTwlOGggHClJcWlFSVQQAAVUOWVFBZQ==
+      Content-Length:
+      - '1349'
       Connection:
       - keep-alive
     body:
@@ -195,7 +195,7 @@ http_interactions:
         \                                               \n<br/>                                                \n<br/>
         \                                               \n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 19:17:11 GMT
+  recorded_at: Tue, 13 Oct 2015 20:38:49 GMT
 - request:
     method: get
     uri: https://na.api.pvp.net/api/lol/na/v2.2/match/583677310?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
@@ -219,13 +219,13 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Tue, 13 Oct 2015 19:17:11 GMT
+      - Tue, 13 Oct 2015 20:38:50 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWUAACC1BTUVEcTwlOGg0CBlUDCgVSVldQAAYAU1RBZQ==
-      Transfer-Encoding:
-      - chunked
+      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVwADBVtfUlUcTwlOGl1SB1FWAFZTUwIEBQRTUlZBZQ==
+      Content-Length:
+      - '1349'
       Connection:
       - keep-alive
     body:
@@ -245,7 +245,7 @@ http_interactions:
         \                                               \n<br/>                                                \n<br/>
         \                                               \n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 19:17:12 GMT
+  recorded_at: Tue, 13 Oct 2015 20:38:50 GMT
 - request:
     method: get
     uri: https://na.api.pvp.net/api/lol/na/v2.2/match/554417662?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
@@ -269,11 +269,11 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Tue, 13 Oct 2015 19:17:12 GMT
+      - Tue, 13 Oct 2015 20:38:50 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVwYHAlJTV04dUxRAXlkGBlVSCgBQA1ZXBVAHUUQ+
+      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVwIHClpRUE4dUxRAClkHV1FdX1UBUwFaXAZVWEQ+
       Content-Length:
       - '1349'
       Connection:
@@ -295,7 +295,7 @@ http_interactions:
         \                                               \n<br/>                                                \n<br/>
         \                                               \n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 19:17:12 GMT
+  recorded_at: Tue, 13 Oct 2015 20:38:50 GMT
 - request:
     method: get
     uri: https://na.api.pvp.net/api/lol/na/v2.2/match/348413125?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
@@ -319,13 +319,13 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Tue, 13 Oct 2015 19:17:12 GMT
+      - Tue, 13 Oct 2015 20:38:50 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVwMCAFpWU1EcTwlOGloEBVJSXQIEWVEGXAJRA1JBZQ==
-      Content-Length:
-      - '1349'
+      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWUAUABVBXVFYcTwlOGgpXVwIDX1lQVlFbVwVVVlRBZQ==
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
@@ -345,7 +345,7 @@ http_interactions:
         \                                               \n<br/>                                                \n<br/>
         \                                               \n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 19:17:12 GMT
+  recorded_at: Tue, 13 Oct 2015 20:38:50 GMT
 - request:
     method: get
     uri: https://na.api.pvp.net/api/lol/na/v2.2/match/348355482?api_key=82ced787-5473-4e7f-938f-c35a1f628ade
@@ -369,13 +369,13 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Tue, 13 Oct 2015 19:17:13 GMT
+      - Tue, 13 Oct 2015 20:38:51 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVwUFAVJeT08BThoAWw5WVwNUCwRVBwYDVANRQzs=
-      Transfer-Encoding:
-      - chunked
+      - PxQFWFFSDwQTUVVSBQYBVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQKFgZuHAhYFVIJb00JV0MCDipcERxUT1IbARlWVwMAAVRWVFYcTwlOGlwFVABSAVJQWFVaVg4OUAdBZQ==
+      Content-Length:
+      - '1349'
       Connection:
       - keep-alive
     body:
@@ -395,5 +395,5 @@ http_interactions:
         \                                               \n<br/>                                                \n<br/>
         \                                               \n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 19:17:13 GMT
+  recorded_at: Tue, 13 Oct 2015 20:38:51 GMT
 recorded_with: VCR 2.9.3

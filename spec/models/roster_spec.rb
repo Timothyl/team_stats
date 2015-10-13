@@ -17,7 +17,6 @@ describe Roster do
     it { should have_db_column(:avg_phys_damage).of_type(:decimal) }
     it { should have_db_column(:avg_magic_damage).of_type(:decimal) }
     it { should have_db_column(:avg_true_damage).of_type(:decimal) }
-
   end
 
   describe "associations" do

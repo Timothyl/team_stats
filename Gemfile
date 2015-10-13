@@ -45,6 +45,10 @@ group :development do
   gem 'spring'
 end
 
+# Used to test JS
+gem 'selenium-webdriver', '~> 2.47.1', group: [:development, :test]
+
+
 gem 'pry-rails', group: [:development, :test]
 gem 'rspec-rails', group: [:development, :test]
 gem 'capybara', group: [:development, :test]

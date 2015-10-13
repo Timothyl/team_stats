@@ -13,8 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require highcharts.js
+//= require highcharts
+//= require smoothState
+//= require_self
 //= require_tree .
+
 
 $(function(){ $(document).foundation(); });
 

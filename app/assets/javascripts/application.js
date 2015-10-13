@@ -15,8 +15,8 @@
 //= require foundation
 //= require highcharts
 //= require percent_damage
-//= require newToShow
 //= require smoothState
+//= require newToShow
 //= require_self
 //= require_tree .
 

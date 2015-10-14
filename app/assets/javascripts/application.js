@@ -15,6 +15,7 @@
 //= require foundation
 //= require highcharts
 //= require percent_damage
+//= require gold
 //= require smoothState
 //= require_self
 //= require_tree .
@@ -24,9 +25,7 @@ $(function(){ $(document).foundation(); });
 
 $(document).ready(function() {
   setTimeout(function(){
-    $(".alert-box").fadeOut("slow", function() {
-      $(this).remove();
-    })
+    $(".alert-box").fadeTo("slow", 0);
   }, 4500);
 });
 

@@ -3,6 +3,7 @@ a {
 }
 
 .show_title {
+  position: relative;
   color: gold;
   font-family: monospace;
   font-size: 4rem;

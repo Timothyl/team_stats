@@ -11,13 +11,15 @@ class TeamsController < ApplicationController
         physical = []
         magic = []
         trueDam = []
+        gold = []
 
         @team.summoners.each do |s|
           physical << s.rosters.find_by(team: @team).avg_phys_damage.to_f
           magic << s.rosters.find_by(team: @team).avg_magic_damage.to_f
           trueDam << s.rosters.find_by(team: @team).avg_true_damage.to_f
+          gold << s.rosters.find_by(team:@team).avg_gold
         end
-        render json: [summoners, physical, magic, trueDam]
+        render json: [summoners, physical, magic, trueDam, gold]
       end
     end
   end

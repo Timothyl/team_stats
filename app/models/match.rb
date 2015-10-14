@@ -29,6 +29,7 @@ class Match < ActiveRecord::Base
       roster.total_percent_magic_damage = 0
       roster.total_percent_true_damage = 0
       roster.avg_percent_damage = 0
+      roster.total_gold = 0
       roster.save
       team.matches.each do |match|
         unless match.info == nil || match.info[0] == "does not exist"
@@ -46,6 +47,7 @@ class Match < ActiveRecord::Base
             sum_physical_dealt = summ_info["stats"]["physicalDamageDealtToChampions"]
             sum_magic_dealt = summ_info["stats"]["magicDamageDealtToChampions"]
             sum_true_dealt = summ_info["stats"]["trueDamageDealtToChampions"]
+            sum_gold_earned = summ_info["stats"]["goldEarned"]
             team_damage_dealt = 0
             match.info["participants"].each do |par|
               if par["teamId"] == summ_team
@@ -63,6 +65,7 @@ class Match < ActiveRecord::Base
             roster.total_percent_physical_damage += (perc_physical * 100).round(1)
             roster.total_percent_magic_damage += (perc_magic * 100).round(1)
             roster.total_percent_true_damage += (perc_true * 100).round(1)
+            roster.total_gold += sum_gold_earned
             roster.total_number_of_games += 1
             roster.save
           end
@@ -73,10 +76,12 @@ class Match < ActiveRecord::Base
         final_phys = (roster.total_percent_physical_damage / roster.total_number_of_games).round(1)
         final_magic = (roster.total_percent_magic_damage / roster.total_number_of_games).round(1)
         final_true = (roster.total_percent_true_damage / roster.total_number_of_games).round(1)
+        final_gold = (roster.total_gold / roster.total_number_of_games)
         roster.avg_percent_damage = final
         roster.avg_phys_damage = final_phys
         roster.avg_magic_damage = final_magic
         roster.avg_true_damage = final_true
+        roster.avg_gold = final_gold
         roster.save
       end
     end

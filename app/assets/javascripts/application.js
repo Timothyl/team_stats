@@ -25,7 +25,7 @@ $(function(){ $(document).foundation(); });
 
 $(document).ready(function() {
   setTimeout(function(){
-    $(".alert-box").fadeTo("slow", 0)
+    $(".alert-box").fadeTo("slow", 0);
   }, 4500);
 });
 

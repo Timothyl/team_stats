@@ -18,6 +18,13 @@
 
  body {
    background: url("/images/Kindred_0.jpg") no-repeat center center fixed;
+   background: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg") no-repeat center center fixed;
+
    background-color: #cccccc;
    background-size: cover;
+ }
+
+ .back-button {
+   left: 0;
+   bottom: 0;
  }

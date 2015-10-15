@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151014175859) do
+ActiveRecord::Schema.define(version: 20151014202909) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,12 @@ ActiveRecord::Schema.define(version: 20151014175859) do
     t.decimal  "avg_true_damage",               precision: 4, scale: 1
     t.integer  "total_gold"
     t.integer  "avg_gold"
+    t.integer  "total_cs"
+    t.integer  "total_jungle_cs"
+    t.integer  "avg_cs"
+    t.integer  "avg_jungle_cs"
+    t.integer  "total_cs_diff"
+    t.integer  "avg_cs_diff"
   end
 
   create_table "summoners", force: :cascade do |t|

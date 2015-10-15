@@ -1,25 +1,26 @@
 $(function(){
-  $(".tab2").on("click", function () {
+  $(".tab2a").on("click", function () {
     $.ajax({
       method: "GET",
       url: window.location["pathname"],
       dataType: "json"
     }).done(function(data){
       var summoners = data[0];
-      var gold = data[4];
-      $("#gold").highcharts({
+      var cs_diff = data[7];
+      debugger;
+      $("#cs_diff").highcharts({
         chart: {
-          type: "column"
+          type: "bar"
         },
         title: {
-          text: "Average Amount of Gold Earned"
+          text: "Average CS Differential @ 10"
         },
         xAxis: {
           categories: summoners
         },
         yAxis: {
           title: {
-            text: "Gold"
+            text: "Minions"
           }
         },
         plotOptions: {
@@ -27,10 +28,9 @@ $(function(){
             stacking: "normal"
           }
         },
-        colors: ["Gold"],
         series: [{
-          name: "Gold",
-          data: gold
+          name: "CS",
+          data: cs_diff
         }]
       });
     });

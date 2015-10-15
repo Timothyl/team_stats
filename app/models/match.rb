@@ -29,6 +29,7 @@ class Match < ActiveRecord::Base
       roster.total_percent_magic_damage = 0
       roster.total_percent_true_damage = 0
       roster.avg_percent_damage = 0
+      roster.save
       roster.total_gold = 0
       roster.total_cs = 0
       roster.total_jungle_cs = 0
@@ -77,6 +78,7 @@ class Match < ActiveRecord::Base
             roster.total_percent_physical_damage += (perc_physical * 100).round(1)
             roster.total_percent_magic_damage += (perc_magic * 100).round(1)
             roster.total_percent_true_damage += (perc_true * 100).round(1)
+            roster.save
             roster.total_gold += sum_gold_earned
             roster.total_cs += sum_cs
             roster.total_jungle_cs += sum_jungle_cs
@@ -99,6 +101,7 @@ class Match < ActiveRecord::Base
         roster.avg_phys_damage = final_phys
         roster.avg_magic_damage = final_magic
         roster.avg_true_damage = final_true
+        roster.save
         roster.avg_gold = final_gold
         roster.avg_cs = final_cs
         roster.avg_jungle_cs = final_jungle_cs

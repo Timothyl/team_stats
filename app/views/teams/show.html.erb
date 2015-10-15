@@ -7,6 +7,7 @@
         <li class="tab-title tab2"><a href="#panel2">Gold Share <img src="/images/gold.png"/></a></li>
         <li class="tab-title tab3"><a href="#panel3">Damages <img src="/images/score.png"/></a></li>
         <li class="tab-title tab4"><a href="#panel4">CS <img src="/images/minion.png"/></a></li>
+        <li class="tab-title tab5"><a href="#panel5">Vision <img src="/images/ward.png"/></a></li>
 
       </ul>
       <div class="tabs-content">
@@ -18,7 +19,7 @@
             <li class="panel roster_panel">
                 <% stats = s.rosters.find_by(team: @team) %>
                 <div class="small-4 summ_name columns"><%= s.name %> </div>
-                <div class="small-3 kda columns">
+                <div class="small-2 kda columns">
                   <% kda = ((stats.kills + stats.assists)/stats.deaths.to_f).round(1) %>
                   <% if kda.nan? %>
                     N/A
@@ -26,7 +27,7 @@
                     <%= kda %> kda
                   <% end %>
                 </div>
-                <div class="small-5 columns join_date">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
+                <div class="small-6 columns join_date">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
             </li>
           </div>
           <% end %>
@@ -48,13 +49,13 @@
         <div class="content" id="panel4">
 
           <ul class="tabs" data-tab>
-            <li class="tab-title tab1a"><a href="#panel1a">Totals</a></li>
+            <li class="tab-title tab1a active"><a href="#panel1a">Totals</a></li>
             <li class="tab-title tab2a"><a href="#panel2a">CS@10</a></li>
           </ul>
 
           <div class="tabs-content">
 
-            <div class="content" id="panel1a">
+            <div class="content active" id="panel1a">
               <div class="row">
                 <div class="small-11 columns" id="cs" style="width:100%; height:600px;"></div>
               </div>
@@ -67,7 +68,13 @@
             </div>
 
           </div>
+        </div>
 
+
+        <div class="content" id="panel5">
+          <div class="row">
+            <div class="small-11 columns" id="vision" style="width:100%; height:600px;"></div>
+          </div>
         </div>
 
       </div>

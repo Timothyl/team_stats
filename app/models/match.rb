@@ -30,6 +30,10 @@ class Match < ActiveRecord::Base
       roster.total_percent_true_damage = 0
       roster.avg_percent_damage = 0
       roster.total_gold = 0
+      roster.total_cs = 0
+      roster.total_jungle_cs = 0
+      roster.total_cs_diff = 0
+      game_no_cs_diff = 0
       roster.save
       team.matches.each do |match|
         unless match.info == nil || match.info[0] == "does not exist"
@@ -48,6 +52,14 @@ class Match < ActiveRecord::Base
             sum_magic_dealt = summ_info["stats"]["magicDamageDealtToChampions"]
             sum_true_dealt = summ_info["stats"]["trueDamageDealtToChampions"]
             sum_gold_earned = summ_info["stats"]["goldEarned"]
+            sum_cs = summ_info["stats"]["minionsKilled"]
+            sum_jungle_cs = summ_info["stats"]["neutralMinionsKilled"]
+            if (summ_info["timeline"]["csDiffPerMinDeltas"]) == nil
+              game_no_cs_diff += 1
+              sum_cs_diff = 0
+            else
+              sum_cs_diff = (summ_info["timeline"]["csDiffPerMinDeltas"]["zeroToTen"] * 10)
+            end
             team_damage_dealt = 0
             match.info["participants"].each do |par|
               if par["teamId"] == summ_team
@@ -66,6 +78,9 @@ class Match < ActiveRecord::Base
             roster.total_percent_magic_damage += (perc_magic * 100).round(1)
             roster.total_percent_true_damage += (perc_true * 100).round(1)
             roster.total_gold += sum_gold_earned
+            roster.total_cs += sum_cs
+            roster.total_jungle_cs += sum_jungle_cs
+            roster.total_cs_diff += sum_cs_diff
             roster.total_number_of_games += 1
             roster.save
           end
@@ -77,11 +92,17 @@ class Match < ActiveRecord::Base
         final_magic = (roster.total_percent_magic_damage / roster.total_number_of_games).round(1)
         final_true = (roster.total_percent_true_damage / roster.total_number_of_games).round(1)
         final_gold = (roster.total_gold / roster.total_number_of_games)
+        final_cs = (roster.total_cs / roster.total_number_of_games)
+        final_jungle_cs = (roster.total_jungle_cs / roster.total_number_of_games)
+        final_cs_diff = (roster.total_cs_diff / (roster.total_number_of_games - game_no_cs_diff))
         roster.avg_percent_damage = final
         roster.avg_phys_damage = final_phys
         roster.avg_magic_damage = final_magic
         roster.avg_true_damage = final_true
         roster.avg_gold = final_gold
+        roster.avg_cs = final_cs
+        roster.avg_jungle_cs = final_jungle_cs
+        roster.avg_cs_diff = final_cs_diff
         roster.save
       end
     end

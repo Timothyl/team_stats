@@ -29,6 +29,10 @@ $(function(){
             stacking: "normal"
           }
         },
+        tooltip: {
+            headerFormat: "<b>{point.x}</b><br/>",
+            pointFormat: "{series.name}: {point.y}<br/>Total: {point.stackTotal}"
+        },
         colors: ["#A80A0A", "#112291", "gray"],
         series: [{
           name: "Physical",

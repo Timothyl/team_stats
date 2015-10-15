@@ -3,9 +3,11 @@
   <div class="row fullWidth everything">
     <div class="small-11 medium-11 large-10 small-centered medium-centered columns content">
       <ul class="tabs" data-tab>
-        <li class="tab-title active tab1"><a href="#panel1">Roster</a></li>
-        <li class="tab-title tab2"><a href="#panel2">Gold Share</a></li>
-        <li class="tab-title tab3"><a href="#panel3">Damages</a></li>
+        <li class="tab-title active tab1"><a href="#panel1">Roster <img src="/images/champion.png"/></a></li>
+        <li class="tab-title tab2"><a href="#panel2">Gold Share <img src="/images/gold.png"/></a></li>
+        <li class="tab-title tab3"><a href="#panel3">Damages <img src="/images/score.png"/></a></li>
+        <li class="tab-title tab4"><a href="#panel4">CS <img src="/images/minion.png"/></a></li>
+
       </ul>
       <div class="tabs-content">
 
@@ -41,6 +43,31 @@
           <div class="row">
             <div class="small-11 columns" id="damages" style="width:100%; height:600px;"></div>
           </div>
+        </div>
+
+        <div class="content" id="panel4">
+
+          <ul class="tabs" data-tab>
+            <li class="tab-title tab1a"><a href="#panel1a">Totals</a></li>
+            <li class="tab-title tab2a"><a href="#panel2a">CS@10</a></li>
+          </ul>
+
+          <div class="tabs-content">
+
+            <div class="content" id="panel1a">
+              <div class="row">
+                <div class="small-11 columns" id="cs" style="width:100%; height:600px;"></div>
+              </div>
+            </div>
+
+            <div class="content" id="panel2a">
+              <div class="row">
+                <div class="small-11 columns" id="cs_diff" style="width:100%; height:600px;"></div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
       </div>

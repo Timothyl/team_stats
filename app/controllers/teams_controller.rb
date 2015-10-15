@@ -17,7 +17,6 @@ class TeamsController < ApplicationController
         cs_diff = []
         wards_placed = []
         wards_destroyed = []
-
         @team.summoners.each do |s|
           physical << s.rosters.find_by(team: @team).avg_phys_damage.to_f
           magic << s.rosters.find_by(team: @team).avg_magic_damage.to_f

@@ -8,7 +8,6 @@ $(function(){
       var summoners = data[0];
       var wards_placed = data[8];
       var wards_destroyed = data[9];
-      debugger;
       $("#vision").highcharts({
         chart: {
           type: "bar"

@@ -15,6 +15,8 @@ class TeamsController < ApplicationController
         cs = []
         jungle = []
         cs_diff = []
+        wards_placed = []
+        wards_destroyed = []
 
         @team.summoners.each do |s|
           physical << s.rosters.find_by(team: @team).avg_phys_damage.to_f
@@ -24,8 +26,12 @@ class TeamsController < ApplicationController
           cs << s.rosters.find_by(team: @team).avg_cs
           jungle << s.rosters.find_by(team: @team).avg_jungle_cs
           cs_diff << s.rosters.find_by(team: @team).avg_cs_diff
+          wards_placed << s.rosters.find_by(team: @team).wards_placed.to_f
+          wards_destroyed << s.rosters.find_by(team: @team).wards_destroyed.to_f
+
         end
-        render json: [summoners, physical, magic, trueDam, gold, cs, jungle, cs_diff]
+        render json: [summoners, physical, magic, trueDam, gold, cs, jungle,
+                      cs_diff, wards_placed, wards_destroyed]
       end
     end
   end

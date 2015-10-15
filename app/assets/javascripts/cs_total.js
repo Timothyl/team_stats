@@ -1,5 +1,5 @@
 $(function(){
-  $(".tab1a").on("click", function () {
+  $(".tab4").on("click", function () {
     $.ajax({
       method: "GET",
       url: window.location["pathname"],

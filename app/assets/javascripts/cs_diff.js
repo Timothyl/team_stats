@@ -7,7 +7,6 @@ $(function(){
     }).done(function(data){
       var summoners = data[0];
       var cs_diff = data[7];
-      debugger;
       $("#cs_diff").highcharts({
         chart: {
           type: "bar"

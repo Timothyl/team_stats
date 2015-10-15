@@ -16,8 +16,8 @@ $(function(){
           text: "Average CS"
         },
         tooltip: {
-            headerFormat: '<b>{point.x}</b><br/>',
-            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+            headerFormat: "<b>{point.x}</b><br/>",
+            pointFormat: "{series.name}: {point.y}<br/>Total: {point.stackTotal}"
         },
         xAxis: {
           categories: summoners

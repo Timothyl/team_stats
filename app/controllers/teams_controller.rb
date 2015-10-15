@@ -24,7 +24,6 @@ class TeamsController < ApplicationController
           cs << s.rosters.find_by(team: @team).avg_cs
           jungle << s.rosters.find_by(team: @team).avg_jungle_cs
           cs_diff << s.rosters.find_by(team: @team).avg_cs_diff
-
         end
         render json: [summoners, physical, magic, trueDam, gold, cs, jungle, cs_diff]
       end

@@ -1,1 +1,1 @@
-https://codeship.com/projects/86239390-44f8-0133-90ad-32e15102fd66/status?branch=master
+[ ![Codeship Status for Timothyl/team_stats](https://codeship.com/projects/86239390-44f8-0133-90ad-32e15102fd66/status?branch=master)](https://codeship.com/projects/104546)

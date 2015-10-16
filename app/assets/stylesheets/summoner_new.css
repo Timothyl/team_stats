@@ -18,7 +18,8 @@
 .new_title {
   color: gold;
   font-family: monospace;
-  font-size: 5rem;
+  font-size: 6rem;
+  text-shadow: 2px 2px black;
 }
 
 .fullWidth {

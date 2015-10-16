@@ -111,7 +111,9 @@ class Match < ActiveRecord::Base
         final_gold = (roster.total_gold / roster.total_number_of_games)
         final_cs = (roster.total_cs / roster.total_number_of_games)
         final_jungle_cs = (roster.total_jungle_cs / roster.total_number_of_games)
-        final_cs_diff = (roster.total_cs_diff / (roster.total_number_of_games - game_no_cs_diff))
+        unless roster.total_number_of_games == game_no_cs_diff
+          final_cs_diff = (roster.total_cs_diff / (roster.total_number_of_games - game_no_cs_diff))
+        end
         final_wards_placed = (wards_placed / roster.total_number_of_games)
         final_wards_destroyed = (wards_destroyed / roster.total_number_of_games)
         roster.avg_percent_damage = final

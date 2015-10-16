@@ -23,7 +23,7 @@ $(function(){
             text: "Minions"
           },
           plotLines:[{
-            color: 'black',
+            color: "black",
             width: 3,
             value: 0,
             zIndex: 4

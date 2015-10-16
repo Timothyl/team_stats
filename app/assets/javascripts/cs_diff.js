@@ -12,7 +12,8 @@ $(function(){
           type: "bar"
         },
         title: {
-          text: "Average CS Differential @ 10"
+          text: "Average CS Differential @ 10",
+          style: {"fontSize": "25px"}
         },
         xAxis: {
           categories: summoners
@@ -20,7 +21,13 @@ $(function(){
         yAxis: {
           title: {
             text: "Minions"
-          }
+          },
+          plotLines:[{
+            color: 'black',
+            width: 3,
+            value: 0,
+            zIndex: 4
+          }]
         },
         plotOptions: {
           series: {

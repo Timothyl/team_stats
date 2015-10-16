@@ -23,6 +23,7 @@ class Match < ActiveRecord::Base
       roster.kills = 0
       roster.assists = 0
       roster.deaths = 0
+      roster.kill_part = 0
       roster.total_number_of_games = 0
       roster.total_percent_damage_dealt = 0
       roster.total_percent_physical_damage = 0
@@ -37,6 +38,7 @@ class Match < ActiveRecord::Base
       game_no_cs_diff = 0
       wards_placed = 0
       wards_destroyed = 0
+      kill_part = 0
       roster.save
       team.matches.each do |match|
         unless match.info == nil || match.info[0] == "does not exist"
@@ -49,6 +51,8 @@ class Match < ActiveRecord::Base
             roster.kills = summ_info["stats"]["kills"] + roster.kills
             roster.deaths = summ_info["stats"]["deaths"] + roster.deaths
             roster.assists = summ_info["stats"]["assists"] + roster.assists
+            sum_kills = summ_info["stats"]["kills"]
+            sum_assists = summ_info["stats"]["assists"]
             roster.save
             sum_damage_dealt = summ_info["stats"]["totalDamageDealtToChampions"]
             sum_physical_dealt = summ_info["stats"]["physicalDamageDealtToChampions"]
@@ -66,11 +70,14 @@ class Match < ActiveRecord::Base
               sum_cs_diff = (summ_info["timeline"]["csDiffPerMinDeltas"]["zeroToTen"] * 10)
             end
             team_damage_dealt = 0
+            team_kills = 0
             match.info["participants"].each do |par|
               if par["teamId"] == summ_team
                 team_damage_dealt += par["stats"]["totalDamageDealtToChampions"]
+                team_kills += par["stats"]["kills"]
               end
             end
+            perc_kill_part = ((sum_kills + sum_assists) / team_kills.to_f)
             perc_damage = (sum_damage_dealt / team_damage_dealt.to_f).round(3)
             perc_physical = (sum_physical_dealt / sum_damage_dealt.to_f).round(3)
             perc_magic = (sum_magic_dealt / sum_damage_dealt.to_f).round(3)
@@ -78,6 +85,7 @@ class Match < ActiveRecord::Base
             perc_physical = perc_physical * perc_damage
             perc_magic = perc_magic * perc_damage
             perc_true = perc_true * perc_damage
+            kill_part += (perc_kill_part * 100)
             roster.total_percent_damage_dealt += (perc_damage * 100).round(1)
             roster.total_percent_physical_damage += (perc_physical * 100).round(1)
             roster.total_percent_magic_damage += (perc_magic * 100).round(1)
@@ -95,6 +103,7 @@ class Match < ActiveRecord::Base
         end
       end
       unless roster.total_number_of_games == 0
+        final_kill_part = (kill_part / roster.total_number_of_games)
         final = roster.total_percent_damage_dealt / roster.total_number_of_games
         final_phys = (roster.total_percent_physical_damage / roster.total_number_of_games).round(1)
         final_magic = (roster.total_percent_magic_damage / roster.total_number_of_games).round(1)
@@ -116,6 +125,7 @@ class Match < ActiveRecord::Base
         roster.avg_cs_diff = final_cs_diff
         roster.wards_placed = final_wards_placed
         roster.wards_destroyed = final_wards_destroyed
+        roster.kill_part = final_kill_part
         roster.save
       end
     end

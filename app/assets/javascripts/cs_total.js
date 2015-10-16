@@ -1,5 +1,5 @@
 $(function(){
-  $(".tab4").on("click", function () {
+  $(".tab4, .tab1a").on("click", function () {
     $.ajax({
       method: "GET",
       url: window.location["pathname"],
@@ -13,7 +13,8 @@ $(function(){
           type: "bar"
         },
         title: {
-          text: "Average CS"
+          text: "Average CS",
+          style: {"fontSize": "25px"}
         },
         tooltip: {
             headerFormat: "<b>{point.x}</b><br/>",

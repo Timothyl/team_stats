@@ -24,10 +24,18 @@
                   <% if kda.nan? %>
                     N/A
                   <% else %>
-                    <%= kda %> kda
+                    <%= kda %> KDA
                   <% end %>
                 </div>
-                <div class="small-6 columns join_date">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
+                <div class="small-2 columns kp">
+                  <% if stats.kill_part == 0 %>
+                    N/A
+                  <% else %>
+                    <%= stats.kill_part %>% KP
+                  <% end %>
+                </div>
+
+                <div class="small-4 columns join_date">Member since: <%= stats.joindate.strftime("%B-%d-%Y") %></div>
             </li>
           </div>
           <% end %>

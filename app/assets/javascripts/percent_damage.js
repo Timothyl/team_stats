@@ -14,7 +14,8 @@ $(function(){
           type: "bar"
         },
         title: {
-          text: "Average Percent Damage Dealt to Champions"
+          text: "Average Percent Damage Dealt to Champions",
+          style: {"fontSize": "25px"}
         },
         xAxis: {
           categories: summoners
@@ -33,7 +34,7 @@ $(function(){
             headerFormat: "<b>{point.x}</b><br/>",
             pointFormat: "{series.name}: {point.y}<br/>Total: {point.stackTotal}"
         },
-        colors: ["#A80A0A", "#112291", "gray"],
+        colors: ["#C21D1D", "#243BD1", "gray"],
         series: [{
           name: "Physical",
           data: physical

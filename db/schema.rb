@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151015190330) do
+ActiveRecord::Schema.define(version: 20151016161701) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20151015190330) do
     t.integer  "avg_cs_diff"
     t.decimal  "wards_placed",                  precision: 4, scale: 1
     t.decimal  "wards_destroyed",               precision: 4, scale: 1
+    t.decimal  "kill_part",                     precision: 4, scale: 1
   end
 
   create_table "summoners", force: :cascade do |t|

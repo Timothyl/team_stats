@@ -13,7 +13,8 @@ $(function(){
           type: "bar"
         },
         title: {
-          text: "Average Number of Wards Placed/Destroyed"
+          text: "Average Number of Wards Placed/Destroyed",
+          style: {"fontSize": "25px"}
         },
         xAxis: {
           categories: summoners

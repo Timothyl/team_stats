@@ -12,7 +12,8 @@ $(function(){
           type: "column"
         },
         title: {
-          text: "Average Amount of Gold Earned"
+          text: "Average Amount of Gold Earned",
+          style: {"fontSize": "25px"}
         },
         xAxis: {
           categories: summoners

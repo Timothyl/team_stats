@@ -1,1 +1,6 @@
 {<img src="https://codeship.com/projects/86239390-44f8-0133-90ad-32e15102fd66/status?branch=master" alt="Status?branch=master" />}[https://codeship.com/projects/104546]
+
+League of Legends team stats analyzer
+Takes recent matches played by that ranked team and displays trends and averages.
+
+Site is still working off of a Development API Key from Riot, so there are limited API requests available

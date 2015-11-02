@@ -18,12 +18,7 @@
 
  body {
    background: url("/images/Teemo_0.jpg") no-repeat center center fixed;
-   
+
    background-color: #cccccc;
    background-size: cover;
- }
-
- .back-button {
-   left: 0;
-   bottom: 0;
  }

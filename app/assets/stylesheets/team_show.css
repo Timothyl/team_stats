@@ -49,7 +49,14 @@
   margin-top: -6px;
   white-space: nowrap;
 }
+
 .join_date {
   font-size: 1.25rem;
   white-space: nowrap;
+}
+
+
+.back-button {
+  left: 0;
+  bottom: 0;
 }

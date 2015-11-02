@@ -51,7 +51,8 @@
 }
 
 .join_date {
-  font-size: 1.25rem;
+  margin-top: 3px;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
